@@ -1,0 +1,131 @@
+﻿<Page
+    x:Class="VBA10.HIDGamepadConfig"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VBA10"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignWidth="700"
+    d:DesignHeight="500">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+          
+          >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+
+        <StackPanel Background="{ThemeResource ListBoxBorderThemeBrush}"
+                    VerticalAlignment="Stretch"
+                    Orientation="Horizontal" >
+            
+            <TextBlock x:ConnectionId='26' Text="**HID Gamepad Config" 
+                       Style="{ThemeResource TitleTextBlockStyle}"
+                       Margin="12,4,0,4"
+                       x:Uid="HIDGamepadConfig"
+                       x:Name="txtTitle"
+                       />
+        </StackPanel>
+
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled"
+                      VerticalScrollBarVisibility="Auto"
+                      Grid.Row="1"
+                      >
+            <StackPanel MaxWidth="500"
+                       HorizontalAlignment="Left">
+                <TextBlock x:ConnectionId='2' x:Name="txtNotification" Text="txtNotification - see cpp"
+                       Margin="12,8,0,0"
+                       Visibility="Visible"
+                       TextWrapping="Wrap"
+                       />
+
+                <Grid x:ConnectionId='3'  Margin="12,0,12,0"
+                  x:Name="gridMain"
+                       Visibility="Collapsed"    >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="4*" />
+                        <ColumnDefinition Width="8" />
+                        <ColumnDefinition Width="4*" />
+                    </Grid.ColumnDefinitions>
+
+
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="**Left" x:Uid="Left"  VerticalAlignment="Center" Margin="0,12,0,4"  />
+                    <TextBox x:ConnectionId='4' Grid.Row="0" Grid.Column="1" x:Name="txtLeft1" Tag="Left1"                                                             IsReadOnly="True" Margin="0,12,0,4"/>
+                    <TextBox x:ConnectionId='5' Grid.Row="0" Grid.Column="3" x:Name="txtLeft2" Tag="Left2"                                                             IsReadOnly="True" Margin="0,12,0,4" />
+
+                    <TextBlock Grid.Row="1" Grid.Column="0" Text="Right" x:Uid="Right" VerticalAlignment="Center" Margin="0,12,0,4"  />
+                    <TextBox x:ConnectionId='6' Grid.Row="1" Grid.Column="1" x:Name="txtRight1" Tag="Right1"                                                             IsReadOnly="True" Margin="0,12,0,4"/>
+                    <TextBox x:ConnectionId='7' Grid.Row="1" Grid.Column="3" x:Name="txtRight2" Tag="Right2"                                                             IsReadOnly="True" Margin="0,12,0,4" />
+
+                    <TextBlock Grid.Row="2" Grid.Column="0" Text="Up" x:Uid="Up" VerticalAlignment="Center" Margin="0,12,0,4"  />
+                    <TextBox x:ConnectionId='8' Grid.Row="2" Grid.Column="1" x:Name="txtUp1" Tag="Up1"                                                             IsReadOnly="True" Margin="0,12,0,4"/>
+                    <TextBox x:ConnectionId='9' Grid.Row="2" Grid.Column="3" x:Name="txtUp2" Tag="Up2"                                                             IsReadOnly="True" Margin="0,12,0,4" />
+
+                    <TextBlock Grid.Row="3" Grid.Column="0" Text="Down" x:Uid="Down" VerticalAlignment="Center" Margin="0,12,0,4"  />
+                    <TextBox x:ConnectionId='10' Grid.Row="3" Grid.Column="1" x:Name="txtDown1" Tag="Down1"                                                             IsReadOnly="True" Margin="0,12,0,4"/>
+                    <TextBox x:ConnectionId='11' Grid.Row="3" Grid.Column="3" x:Name="txtDown2" Tag="Down2"                                                             IsReadOnly="True" Margin="0,12,0,4" />
+
+                    <TextBlock Grid.Row="4" Grid.Column="0" Text="A" VerticalAlignment="Center" Margin="0,12,0,4"  />
+                    <TextBox x:ConnectionId='12' Grid.Row="4" Grid.Column="1" x:Name="txtA1" Tag="A1"                                                             IsReadOnly="True" Margin="0,12,0,4"/>
+                    <TextBox x:ConnectionId='13' Grid.Row="4" Grid.Column="3" x:Name="txtA2" Tag="A2"                                                             IsReadOnly="True" Margin="0,12,0,4" />
+
+                    <TextBlock Grid.Row="5" Grid.Column="0" Text="B" VerticalAlignment="Center" Margin="0,12,0,4"  />
+                    <TextBox x:ConnectionId='14' Grid.Row="5" Grid.Column="1" x:Name="txtB1" Tag="B1"                                                             IsReadOnly="True" Margin="0,12,0,4"/>
+                    <TextBox x:ConnectionId='15' Grid.Row="5" Grid.Column="3" x:Name="txtB2" Tag="B2"                                                             IsReadOnly="True" Margin="0,12,0,4" />
+                    
+                    <TextBlock Grid.Row="6" Grid.Column="0" Text="L" VerticalAlignment="Center" Margin="0,12,0,4"  />
+                    <TextBox x:ConnectionId='16' Grid.Row="6" Grid.Column="1" x:Name="txtL1" Tag="L1"                                                             IsReadOnly="True" Margin="0,12,0,4"/>
+                    <TextBox x:ConnectionId='17' Grid.Row="6" Grid.Column="3" x:Name="txtL2" Tag="L2"                                                             IsReadOnly="True" Margin="0,12,0,4" />
+
+                    <TextBlock Grid.Row="7" Grid.Column="0" Text="R" VerticalAlignment="Center" Margin="0,12,0,4"  />
+                    <TextBox x:ConnectionId='18' Grid.Row="7" Grid.Column="1" x:Name="txtR1" Tag="R1"                                                             IsReadOnly="True" Margin="0,12,0,4"/>
+                    <TextBox x:ConnectionId='19' Grid.Row="7" Grid.Column="3" x:Name="txtR2" Tag="R2"                                                             IsReadOnly="True" Margin="0,12,0,4" />
+
+                    <TextBlock Grid.Row="8" Grid.Column="0" Text="Start" x:Uid="Start"  VerticalAlignment="Center" Margin="0,12,0,4"  />
+                    <TextBox x:ConnectionId='20' Grid.Row="8" Grid.Column="1" x:Name="txtStart1" Tag="Start1"                                                             IsReadOnly="True" Margin="0,12,0,4"/>
+                    <TextBox x:ConnectionId='21' Grid.Row="8" Grid.Column="3" x:Name="txtStart2" Tag="Start2"                                                             IsReadOnly="True" Margin="0,12,0,4" />
+
+                    <TextBlock Grid.Row="9" Grid.Column="0" Text="Select" x:Uid="Select"  VerticalAlignment="Center" Margin="0,12,0,4"  />
+                    <TextBox x:ConnectionId='22' Grid.Row="9" Grid.Column="1" x:Name="txtSelect1" Tag="Select1"                                                             IsReadOnly="True" Margin="0,12,0,4"/>
+                    <TextBox x:ConnectionId='23' Grid.Row="9" Grid.Column="3" x:Name="txtSelect2" Tag="Select2"                                                             IsReadOnly="True" Margin="0,12,0,4" />
+
+                    <TextBlock Grid.Row="10" Grid.Column="0" Text="**Turbo" x:Uid="Turbo" VerticalAlignment="Center" Margin="0,12,0,4"  />
+                    <TextBox x:ConnectionId='24' Grid.Row="10" Grid.Column="1" x:Name="txtTurbo1" Tag="Turbo1"                                                             IsReadOnly="True" Margin="0,12,0,4"/>
+                    <TextBox x:ConnectionId='25' Grid.Row="10" Grid.Column="3" x:Name="txtTurbo2" Tag="Turbo2"                                                             IsReadOnly="True" Margin="0,12,0,4" />
+
+                </Grid>
+
+
+
+            </StackPanel>
+        </ScrollViewer>
+
+        <Button x:ConnectionId='1' Content="Close" Grid.Row="3"
+                Width="120"
+                HorizontalAlignment="Center"
+                Margin="0,8,0,4"
+                x:Name="closeBtn"
+                                      />
+    </Grid>
+</Page>
+
