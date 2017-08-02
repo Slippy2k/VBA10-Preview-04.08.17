@@ -20,7 +20,7 @@
         <Grid x:ConnectionId='2' x:Name="titleBar" 
               Height="48"
               Background="{ThemeResource SystemControlBackgroundChromeMediumBrush}">
-            <TextBlock x:ConnectionId='58' x:Name="title" 
+            <TextBlock x:ConnectionId='54' x:Name="title" 
                      Style="{StaticResource PageTitleTextBlockStyle}" Text="**SETTINGS"
                        x:Uid="SETTINGS"/>
         </Grid>
@@ -43,39 +43,7 @@
                             <CollectionViewSource x:ConnectionId='20' x:Name="vsControllerList"/>
                         </StackPanel.Resources>
 
-                        <TextBlock TextWrapping="Wrap" 
-                                   Margin="0,0,0,8">
-                            <Run Text="**Both Xbox and generic HID gamepads"
-                                 x:Uid="GamepadInstruction1"/>
-                            <Run x:ConnectionId='57' Text="** Buy premium feature package"
-                                 x:Uid="GamepadInstruction2"
-                                 x:Name="runBuyNotice"/>
-                        </TextBlock>
-
-                        <Grid x:ConnectionId='21' Margin="0,0,0,8"
-                            x:Name="panelGamepadActivate">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="1*" />
-                                <ColumnDefinition Width="8" />
-                                <ColumnDefinition Width="1*" />
-                            </Grid.ColumnDefinitions>
-                            
-                            <Button x:ConnectionId='55' x:Name="purchaseBtn" Content="**Buy" 
-                                                             
-                                    x:Uid="BuyBtn"
-                                    HorizontalAlignment="Stretch"
-                            />
-
-                            <Button x:ConnectionId='56' x:Name="watchVideoBtn" Content="**Watch Video" 
-                                                               
-                                    x:Uid="WatchVideoBtn"
-                                    HorizontalAlignment="Stretch"
-                                    Grid.Column="2"/>
-
-
-                        </Grid>
-
-                        <TextBlock x:ConnectionId='22' TextWrapping="Wrap" 
+                        <TextBlock x:ConnectionId='21' TextWrapping="Wrap" 
                                    Text="txtControllerStatus - set by cpp"
                                    x:Name="txtControllerStatus"
                                    Foreground="Blue"
@@ -83,18 +51,18 @@
                                    >
                         </TextBlock>
 
-                        <Button x:ConnectionId='23' x:Name="ConfigureXboxBtn" Content="**Configure" 
+                        <Button x:ConnectionId='22' x:Name="ConfigureXboxBtn" Content="**Configure" 
                                 x:Uid="ConfigureBtn"
                                  HorizontalAlignment="Stretch"
                                 Margin="0,0,0,12"                               
                                        />
 
-                        <StackPanel x:ConnectionId='24' x:Name="panelHIDGamepad" >
-                            <TextBlock x:ConnectionId='50' Text="txtHIDGamepad - set by cpp" 
+                        <StackPanel x:ConnectionId='23' x:Name="panelHIDGamepad" >
+                            <TextBlock x:ConnectionId='49' Text="txtHIDGamepad - set by cpp" 
                                        Foreground="Blue"
                                        Margin="0,0,0,8"
                                        x:Name="txtHIDGamepad"/>
-                            <ListBox x:ConnectionId='51' x:Name="lbHIDGamepad"
+                            <ListBox x:ConnectionId='50' x:Name="lbHIDGamepad"
                                       ItemsSource="{Binding Source={StaticResource vsControllerList}}"
                                      Margin="0,0,0,8">
                                 <ListBox.ItemContainerStyle>
@@ -112,7 +80,7 @@
                                 </ListBox.ItemTemplate>
                             </ListBox>
 
-                            <Grid x:ConnectionId='52' Margin =" 0, 0, 0, 12"
+                            <Grid x:ConnectionId='51' Margin =" 0, 0, 0, 12"
                                         x:Name="panelHIDConnect">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="1*" />
@@ -120,13 +88,13 @@
                                     <ColumnDefinition Width="1*" />
                                 </Grid.ColumnDefinitions>
                                 
-                                <Button x:ConnectionId='53' x:Name="ConfigureBtn" Content="**Configure" 
+                                <Button x:ConnectionId='52' x:Name="ConfigureBtn" Content="**Configure" 
                                         x:Uid="ConfigureBtn"
                                                                   
                                         HorizontalAlignment="Stretch"
                                         />
 
-                                <Button x:ConnectionId='54' x:Name="ConnectBtn" Content="**Connect" 
+                                <Button x:ConnectionId='53' x:Name="ConnectBtn" Content="**Connect" 
                                         x:Uid="ConnectBtn"
                                                                 
                                         HorizontalAlignment="Stretch"
@@ -136,7 +104,7 @@
                             </Grid>
                         </StackPanel>
 
-                        <ComboBox x:ConnectionId='25' Name="cboTurboBehavior" 
+                        <ComboBox x:ConnectionId='24' Name="cboTurboBehavior" 
                                   HorizontalAlignment="Stretch" 
                                   VerticalAlignment="Top" 
                                   SelectedIndex="0"
@@ -150,7 +118,7 @@
                                           x:Uid="HoldActivateCbi"/>
                         </ComboBox>
 
-                        <ToggleSwitch x:ConnectionId='26' Header="**Show Virtual Buttons" 
+                        <ToggleSwitch x:ConnectionId='25' Header="**Show Virtual Buttons" 
                                       Name="touchToggle" HorizontalAlignment="Left" 
                                                                    
                                       x:Uid="TouchToggle"
@@ -162,7 +130,7 @@
                                               x:Name="touchControlPosToggle" 
                                               Toggled="touchControlPosToggle_Toggled"/>-->
 
-                        <ComboBox x:ConnectionId='27' Name="dpadComboBox" 
+                        <ComboBox x:ConnectionId='26' Name="dpadComboBox" 
                                   HorizontalAlignment="Stretch" 
                                   VerticalAlignment="Top" 
                                   SelectedIndex="1"
@@ -177,7 +145,7 @@
 
                         
 
-                        <Button x:ConnectionId='28' x:Name="editButonLayoutBtn" 
+                        <Button x:ConnectionId='27' x:Name="editButonLayoutBtn" 
                                 Content="**Edit button layout" 
                                     HorizontalAlignment="Stretch"
                                                                     
@@ -191,7 +159,7 @@
                                 <ColumnDefinition Width="30" />
                             </Grid.ColumnDefinitions>
 
-                            <Slider x:ConnectionId='48' Minimum="0.0" 
+                            <Slider x:ConnectionId='47' Minimum="0.0" 
                                     Maximum="50.0" Value="10.0" 
                                     Name="deadzoneSlider" 
                                                                                 
@@ -206,7 +174,7 @@
                                 </Slider.Header>
                             </Slider>
 
-                            <ToggleButton x:ConnectionId='49'  x:Name="deadzoneToggle"
+                            <ToggleButton x:ConnectionId='48'  x:Name="deadzoneToggle"
                                 Grid.Column="2"
                                         FontSize="20"
                                         Style="{ThemeResource LockButtonStyle}"
@@ -224,7 +192,7 @@
                                 <ColumnDefinition Width="30" />
                             </Grid.ColumnDefinitions>
 
-                            <Slider x:ConnectionId='46'  Minimum="50" Maximum="150" Value="100" 
+                            <Slider x:ConnectionId='45'  Minimum="50" Maximum="150" Value="100" 
                                  Name="controllerScaleSlider" 
                                                                                     
                                     IsEnabled="{Binding IsChecked,  ElementName=controllerScaleToggle}"
@@ -239,7 +207,7 @@
                                 </Slider.Header>
                             </Slider>
 
-                            <ToggleButton x:ConnectionId='47'  x:Name="controllerScaleToggle"
+                            <ToggleButton x:ConnectionId='46'  x:Name="controllerScaleToggle"
                                 Grid.Column="2"
                                         FontSize="20"
                                         Style="{ThemeResource LockButtonStyle}"
@@ -258,7 +226,7 @@
                                 <ColumnDefinition Width="30" />
                             </Grid.ColumnDefinitions>
 
-                            <Slider x:ConnectionId='44'  Minimum="50" Maximum="150" Value="100" 
+                            <Slider x:ConnectionId='43'  Minimum="50" Maximum="150" Value="100" 
                                  Name="buttonScaleSlider" 
                                                                                 
                                     IsEnabled="{Binding IsChecked,  ElementName=buttonScaleToggle}"
@@ -273,7 +241,7 @@
                                 </Slider.Header>
                             </Slider>
 
-                            <ToggleButton x:ConnectionId='45'  x:Name="buttonScaleToggle"
+                            <ToggleButton x:ConnectionId='44'  x:Name="buttonScaleToggle"
                                 Grid.Column="2"
                                         FontSize="20"
                                         Style="{ThemeResource LockButtonStyle}"
@@ -291,7 +259,7 @@
                                 <ColumnDefinition Width="30" />
                             </Grid.ColumnDefinitions>
 
-                            <Slider x:ConnectionId='42'  Minimum="10" Maximum="100" Value="50" 
+                            <Slider x:ConnectionId='41'  Minimum="10" Maximum="100" Value="50" 
                                  Name="controllerOpacitySlider" 
                                                                                       
                                     IsEnabled="{Binding IsChecked,  ElementName=controllerOpacityToggle}"
@@ -306,7 +274,7 @@
                                 </Slider.Header>
                             </Slider>
 
-                            <ToggleButton x:ConnectionId='43'  x:Name="controllerOpacityToggle"
+                            <ToggleButton x:ConnectionId='42'  x:Name="controllerOpacityToggle"
                                 Grid.Column="2"
                                         FontSize="20"
                                         Style="{ThemeResource LockButtonStyle}"
@@ -345,67 +313,67 @@
                             </Grid.RowDefinitions>
                             <TextBlock HorizontalAlignment="Left" Grid.Row="0" Grid.Column="0" TextWrapping="Wrap"
                                                 Text="**Left" x:Uid="Left" VerticalAlignment="Center" />
-                            <TextBox x:ConnectionId='29' HorizontalAlignment="Stretch" Grid.Row="0" Grid.Column="1" Name="leftKeyBox" AcceptsReturn="False" 
+                            <TextBox x:ConnectionId='28' HorizontalAlignment="Stretch" Grid.Row="0" Grid.Column="1" Name="leftKeyBox" AcceptsReturn="False" 
                                                                                         TextWrapping="Wrap" Text="Left"  Margin="0,4,0,4"
                                              VerticalAlignment="Top" />
 
                             <TextBlock HorizontalAlignment="Left" Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" 
                                                Text="**Up" x:Uid="Up" VerticalAlignment="Center" />
-                            <TextBox x:ConnectionId='30' HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="1" x:Name="upKeyBox" Margin="0,4,0,4"
+                            <TextBox x:ConnectionId='29' HorizontalAlignment="Stretch" Grid.Row="1" Grid.Column="1" x:Name="upKeyBox" Margin="0,4,0,4"
                                              AcceptsReturn="False"                                          TextWrapping="Wrap" 
                                              Text="Up" VerticalAlignment="Top" />
 
                             <TextBlock HorizontalAlignment="Left" Grid.Row="2" Grid.Column="0" TextWrapping="Wrap" 
                                                Text="**Right" x:Uid="Right" VerticalAlignment="Center"/>
-                            <TextBox x:ConnectionId='31' HorizontalAlignment="Stretch" Grid.Row="2" Grid.Column="1" x:Name="rightKeyBox" Margin="0,0,0,4"
+                            <TextBox x:ConnectionId='30' HorizontalAlignment="Stretch" Grid.Row="2" Grid.Column="1" x:Name="rightKeyBox" Margin="0,0,0,4"
                                              AcceptsReturn="False"                                                TextWrapping="Wrap" 
                                              Text="Right" VerticalAlignment="Top" />
 
                             <TextBlock HorizontalAlignment="Left" Grid.Row="3" Grid.Column="0" TextWrapping="Wrap" 
                                                Text="**Down" x:Uid="Down" VerticalAlignment="Center" />
-                            <TextBox x:ConnectionId='32' HorizontalAlignment="Stretch" Grid.Row="3" Grid.Column="1" x:Name="downKeyBox" Margin="0,4,0,4"
+                            <TextBox x:ConnectionId='31' HorizontalAlignment="Stretch" Grid.Row="3" Grid.Column="1" x:Name="downKeyBox" Margin="0,4,0,4"
                                              AcceptsReturn="False"                                            TextWrapping="Wrap" 
                                              Text="Down" VerticalAlignment="Top" />
 
                             <TextBlock HorizontalAlignment="Left" Grid.Row="4" Grid.Column="0" TextWrapping="Wrap" 
                                                Text="B" VerticalAlignment="Center" />
-                            <TextBox x:ConnectionId='33' HorizontalAlignment="Stretch" Grid.Row="4" Grid.Column="1" x:Name="bKeyBox" Margin="0,4,0,4"
+                            <TextBox x:ConnectionId='32' HorizontalAlignment="Stretch" Grid.Row="4" Grid.Column="1" x:Name="bKeyBox" Margin="0,4,0,4"
                                              AcceptsReturn="False"                                         TextWrapping="Wrap" 
                                              Text="B" VerticalAlignment="Top" />
 
                             <TextBlock HorizontalAlignment="Left" Grid.Row="5" Grid.Column="0" TextWrapping="Wrap" 
                                                Text="A" VerticalAlignment="Center" />
-                            <TextBox x:ConnectionId='34' HorizontalAlignment="Stretch" Grid.Row="5" Grid.Column="1" x:Name="aKeyBox" Margin="0,4,0,4"
+                            <TextBox x:ConnectionId='33' HorizontalAlignment="Stretch" Grid.Row="5" Grid.Column="1" x:Name="aKeyBox" Margin="0,4,0,4"
                                              AcceptsReturn="False"                                         TextWrapping="Wrap" 
                                              Text="A" VerticalAlignment="Top"/>
 
-                            <TextBlock x:ConnectionId='35' HorizontalAlignment="Left" Grid.Row="6" Grid.Column="0" TextWrapping="Wrap" Name="lKeyLabel"
+                            <TextBlock x:ConnectionId='34' HorizontalAlignment="Left" Grid.Row="6" Grid.Column="0" TextWrapping="Wrap" Name="lKeyLabel"
                                                Text="L" VerticalAlignment="Center" />
-                            <TextBox x:ConnectionId='36' HorizontalAlignment="Stretch" Grid.Row="6" Grid.Column="1" x:Name="lKeyBox" Margin="0,4,0,4"
+                            <TextBox x:ConnectionId='35' HorizontalAlignment="Stretch" Grid.Row="6" Grid.Column="1" x:Name="lKeyBox" Margin="0,4,0,4"
                                              AcceptsReturn="False"                                         TextWrapping="Wrap" 
                                              Text="L" VerticalAlignment="Top" />
 
-                            <TextBlock x:ConnectionId='37' HorizontalAlignment="Left" Grid.Row="7" Grid.Column="0" TextWrapping="Wrap"  Name="rKeyLabel"
+                            <TextBlock x:ConnectionId='36' HorizontalAlignment="Left" Grid.Row="7" Grid.Column="0" TextWrapping="Wrap"  Name="rKeyLabel"
                                                Text="R" VerticalAlignment="Center" />
-                            <TextBox x:ConnectionId='38' HorizontalAlignment="Stretch" Grid.Row="7" Grid.Column="1" x:Name="rKeyBox" Margin="0,4,0,4"
+                            <TextBox x:ConnectionId='37' HorizontalAlignment="Stretch" Grid.Row="7" Grid.Column="1" x:Name="rKeyBox" Margin="0,4,0,4"
                                              AcceptsReturn="False"                                         TextWrapping="Wrap" 
                                              Text="R" VerticalAlignment="Top" />
 
                             <TextBlock HorizontalAlignment="Left" Grid.Row="8" Grid.Column="0" TextWrapping="Wrap" 
                                                Text="**Start" x:Uid="Start" VerticalAlignment="Center" />
-                            <TextBox x:ConnectionId='39' HorizontalAlignment="Stretch" Grid.Row="8" Grid.Column="1" x:Name="startKeyBox" Margin="0,4,0,4"
+                            <TextBox x:ConnectionId='38' HorizontalAlignment="Stretch" Grid.Row="8" Grid.Column="1" x:Name="startKeyBox" Margin="0,4,0,4"
                                              AcceptsReturn="False"                                             TextWrapping="Wrap" 
                                              Text="Start" VerticalAlignment="Top"/>
 
                             <TextBlock HorizontalAlignment="Left" Grid.Row="9" Grid.Column="0" TextWrapping="Wrap" 
                                                Text="**Select" x:Uid="Select" VerticalAlignment="Center" />
-                            <TextBox x:ConnectionId='40' HorizontalAlignment="Stretch" Grid.Row="9" Grid.Column="1" x:Name="selectKeyBox" Margin="0,4,0,4"
+                            <TextBox x:ConnectionId='39' HorizontalAlignment="Stretch" Grid.Row="9" Grid.Column="1" x:Name="selectKeyBox" Margin="0,4,0,4"
                                              AcceptsReturn="False"                                              TextWrapping="Wrap" 
                                              Text="Select" VerticalAlignment="Top" />
 
                             <TextBlock HorizontalAlignment="Left" Grid.Row="10" Grid.Column="0" TextWrapping="Wrap" 
                                                Text="**Turbo Mode" x:Uid="Turbo" VerticalAlignment="Center" />
-                            <TextBox x:ConnectionId='41' HorizontalAlignment="Stretch" Grid.Row="10" Grid.Column="1" x:Name="turboModeBox" Margin="0,4,0,4"
+                            <TextBox x:ConnectionId='40' HorizontalAlignment="Stretch" Grid.Row="10" Grid.Column="1" x:Name="turboModeBox" Margin="0,4,0,4"
                                              AcceptsReturn="False"                                                TextWrapping="Wrap" 
                                              Text="T" VerticalAlignment="Top" />
                         </Grid>
@@ -479,14 +447,12 @@
                                   x:Uid="FrameSkipTurbo"
                                   Margin="0,0,0,10">
                             <ComboBoxItem>1</ComboBoxItem>
-                            <ComboBoxItem>2</ComboBoxItem>
-                            <ComboBoxItem>3</ComboBoxItem>
-                            <ComboBoxItem>4</ComboBoxItem>
                             <ComboBoxItem>5</ComboBoxItem>
-                            <ComboBoxItem>6</ComboBoxItem>
-                            <ComboBoxItem>7</ComboBoxItem>
-                            <ComboBoxItem>8</ComboBoxItem>
-                            <ComboBoxItem>9</ComboBoxItem>
+                            <ComboBoxItem>10</ComboBoxItem>
+                            <ComboBoxItem>15</ComboBoxItem>
+                            <ComboBoxItem>20</ComboBoxItem>
+                            <ComboBoxItem>25</ComboBoxItem>
+                            <ComboBoxItem>30</ComboBoxItem>
                         </ComboBox>
 
 
@@ -665,8 +631,6 @@
             </PivotItem>
         </Pivot>
 
-        <!--<local:AdControl Grid.Row="2">
-        </local:AdControl>-->
 
     </Grid>
 </Page>

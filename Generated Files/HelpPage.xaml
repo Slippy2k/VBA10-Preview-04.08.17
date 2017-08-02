@@ -8,7 +8,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    <Grid x:ConnectionId='1' Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
           x:Name="LayoutRoot">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -16,10 +16,10 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Grid x:Name="titleBar" 
+        <Grid x:ConnectionId='2' x:Name="titleBar" 
               Height="48"
               Background="{ThemeResource SystemControlBackgroundChromeMediumBrush}">
-            <TextBlock x:Name="title" 
+            <TextBlock x:ConnectionId='11' x:Name="title" 
                      Style="{StaticResource PageTitleTextBlockStyle}" Text="**HELP"
                        x:Uid="HELP"/>
         </Grid>
@@ -63,7 +63,7 @@
                         <TextBlock TextWrapping="Wrap" >
                             <Run Text="VBA10 (Preview)"/>
                         </TextBlock>
-                        <TextBlock TextWrapping="Wrap" Name="versionBlock"
+                        <TextBlock x:ConnectionId='3' TextWrapping="Wrap" Name="versionBlock"
                                Text="**Version: check .cpp">
                         </TextBlock>
 
@@ -75,8 +75,8 @@
                                    Text="**Develop: Commander Harper">
                         </TextBlock>
 
-                        <TextBlock TextWrapping="Wrap"
-                               Tapped="contactBlock_Tapped"
+                        <TextBlock x:ConnectionId='4' TextWrapping="Wrap"
+                                                           
                                >
                 	        <Run Text="**Contact: " 
                                  x:Uid="Contact"/>
@@ -96,7 +96,7 @@
                         <TextBlock><LineBreak/></TextBlock>
 
 
-                        <TextBlock TextWrapping="Wrap" Tapped="SourceBlock_Tapped"
+                        <TextBlock x:ConnectionId='5' TextWrapping="Wrap"                            
                         >
                             <Run Text="**Source: " 
                                  x:Uid="Source"/>
@@ -106,7 +106,7 @@
                         </TextBlock>
 
 
-                        <TextBlock TextWrapping="Wrap" Tapped="GithubOld_Tapped"
+                        <TextBlock x:ConnectionId='6' TextWrapping="Wrap"                          
                         >
                             <Run Text="**Github (old): " 
                                  x:Uid="GithubOld"/>
@@ -115,7 +115,7 @@
                             </Underline>
                         </TextBlock>
 
-                        <TextBlock TextWrapping="Wrap" Tapped="Github_Tapped"
+                        <TextBlock x:ConnectionId='7' TextWrapping="Wrap"                       
                         >
                             <Run Text="**Github: " 
                                  x:Uid="Github"/>
@@ -124,7 +124,7 @@
                             </Underline>
                         </TextBlock>
 
-                        <TextBlock TextWrapping="Wrap" Tapped="CheckNewVersion_Tapped"
+                        <TextBlock x:ConnectionId='8' TextWrapping="Wrap"                                
                         >
                             <Run Text="**Check New Version: " 
                                  x:Uid="CheckNewVersion"/>
@@ -134,7 +134,7 @@
                         </TextBlock>
 
 
-                        <TextBlock TextWrapping="Wrap" Tapped="TransLate_Tapped"
+                        <TextBlock x:ConnectionId='9' TextWrapping="Wrap"                          
                         >
                             <Run Text="**Help Us with Translation: " 
                                  x:Uid="Translate"/>
@@ -171,7 +171,7 @@
 
                         <TextBlock><LineBreak/></TextBlock>
 
-                        <TextBlock TextWrapping="Wrap" Tapped="Gpl_Tapped"
+                        <TextBlock x:ConnectionId='10' TextWrapping="Wrap"                    
                         >
                             <Run Text="**Gpl: " 
                                  x:Uid="Gpl"/>
@@ -190,3 +190,4 @@
 
     </Grid>
 </Page>
+

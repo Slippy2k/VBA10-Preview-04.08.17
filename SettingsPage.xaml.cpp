@@ -46,9 +46,6 @@ SettingsPage::SettingsPage()
 
 	auto loader = Windows::ApplicationModel::Resources::ResourceLoader::GetForViewIndependentUse();
 
-		panelGamepadActivate->Visibility = Windows::UI::Xaml::Visibility::Collapsed;
-		this->runBuyNotice->Text = "";
-
 	this->touchToggle->IsOn = TouchControlsEnabled();
 	this->UpdateTextBox(this->leftKeyBox, GetLeftKeyBinding());
 	this->UpdateTextBox(this->rightKeyBox, GetRightKeyBinding());
@@ -193,11 +190,6 @@ SettingsPage::SettingsPage()
 }
 
 
-void SettingsPage::purchaseBtn_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
-{
-	DirectXPage::Current->GoToPage(4);
-}
-
 void SettingsPage::watchVideobtn_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
 	//reset xbox controller timer
@@ -231,7 +223,6 @@ void SettingsPage::OnAdReady(Platform::Object ^sender, Platform::Object ^args)
 void SettingsPage::OnErrorOccurred(Platform::Object ^sender, Microsoft::Advertising::WinRT::UI::AdErrorEventArgs ^args)
 {
 	this->emulator->ResetXboxTimer();
-	this->runBuyNotice->Foreground = ref new SolidColorBrush(Windows::UI::Colors::Black);
 	MessageDialog ^dialog = ref new MessageDialog(ResourceLoader::GetForViewIndependentUse()->GetString("ThanksWatchVideoText"));
 	dialog->ShowAsync();
 }
@@ -246,7 +237,6 @@ void SettingsPage::OnCancelled(Platform::Object ^sender, Platform::Object ^args)
 void SettingsPage::OnCompleted(Platform::Object ^sender, Platform::Object ^args)
 {
 	this->emulator->ResetXboxTimer();
-	this->runBuyNotice->Foreground = ref new SolidColorBrush(Windows::UI::Colors::Black);
 	MessageDialog ^dialog = ref new MessageDialog(ResourceLoader::GetForViewIndependentUse()->GetString("ThanksWatchVideoText"));
 	dialog->ShowAsync();
 }
@@ -582,7 +572,7 @@ void SettingsPage::turboSkipComboBox_SelectionChanged_1(Platform::Object^ sender
 {
 	if (initdone)
 	{
-		EmulatorSettings::Current->TurboFrameSkip = this->turboSkipComboBox->SelectedIndex + 1;
+		EmulatorSettings::Current->TurboFrameSkip = this->turboSkipComboBox->SelectedIndex * 5 + 1;
 	}
 }
 
@@ -796,14 +786,4 @@ void SettingsPage::hideHamburgerToggle_Toggled(Platform::Object^ sender, Windows
 		EmulatorSettings::Current->HideHamburger = this->hideHamburgerToggle->IsOn;
 	}
 }
-
-
-
-
-
-
-
-
-
-
 

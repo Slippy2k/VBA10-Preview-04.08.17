@@ -108,6 +108,7 @@ namespace VBA10
 	void setMonitorType(int type);
 
 	//void enableLowDisplayRefreshMode(bool enable);
+	//TODO: Lookup
 	void enableTouchControls(bool enable);
 	void enableSound(bool enable);
 	void setTouchControllerOnTop(bool onTop);

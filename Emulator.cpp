@@ -171,6 +171,7 @@ namespace VBA10
 			if(true)//EmulatorSettings::Current->SoundEnabled)
 			{
 				soundSetVolume(1.0f);
+				//TODO: Sound
 			}else
 			{
 				soundSetVolume(0.0f);

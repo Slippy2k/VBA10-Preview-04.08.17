@@ -134,7 +134,7 @@ namespace VBA10
 
 		//from AppShell
 		void NavMenuList_ItemInvoked(Object^ sender, ListViewItem^ e);
-		void CheckTogglePaneButtonSizeChanged();
+		//void CheckTogglePaneButtonSizeChanged();
 		void NavMenuItemContainerContentChanging(ListViewBase^ sender, ContainerContentChangingEventArgs^ args);
 
 		Vector<NavMenuItem^>^ navlist;

@@ -335,11 +335,8 @@
     <Image Include="Assets\MediumTile.scale-150.png" />
     <Image Include="Assets\MediumTile.scale-200.png" />
     <Image Include="Assets\MediumTile.scale-400.png" />
-    <Image Include="Assets\noad_icon.png" />
-    <Image Include="Assets\noad_plus_icon.png" />
     <Image Include="Assets\no_snapshot.png" />
     <Image Include="Assets\play.png" />
-    <Image Include="Assets\plus_sign.png" />
     <Image Include="Assets\SmallTile.scale-100.png" />
     <Image Include="Assets\SmallTile.scale-200.png">
       <DeploymentContent>true</DeploymentContent>
@@ -424,9 +421,6 @@
     <ClInclude Include="OnResizeBuffer.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="ppltasks_extra.h" />
-    <ClInclude Include="PurchasePage.xaml.h">
-      <DependentUpon>PurchasePage.xaml</DependentUpon>
-    </ClInclude>
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SampleFpsTextRenderer.h" />
@@ -744,9 +738,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="PurchasePage.xaml.cpp">
-      <DependentUpon>PurchasePage.xaml</DependentUpon>
     </ClCompile>
     <ClCompile Include="Rectangle.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
@@ -1268,9 +1259,6 @@
     <Page Include="ImportPage.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="PurchasePage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="SelectFilePane.xaml" />
     <Page Include="SelectFilesPane.xaml">
       <SubType>Designer</SubType>
@@ -1527,7 +1515,6 @@
     </FxCompile>
   </ItemGroup>
   <ItemGroup>
-    <SDKReference Include="AdDuplex.Windows10, Version=10.1.1.1" />
     <SDKReference Include="Microsoft.Advertising.Xaml, Version=10.0" />
     <SDKReference Include="SQLite.UWP.2015, Version=3.19.3" />
     <SDKReference Include="WindowsMobile, Version=10.0.10240.0" />

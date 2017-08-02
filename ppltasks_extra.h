@@ -86,7 +86,7 @@ namespace Concurrency
         ///     The iteration will not stop until the result of the returning task from user Functor <paramref name="body"/> is <c> False </c>.
         /// </remarks>
         /// <seealso cref="Task Parallelism (Concurrency Runtime)"/>
-        /**/
+        
         inline task<void> create_iterative_task(std::function<concurrency::task<bool>()> body, cancellation_token ct = cancellation_token::none())
         {
             concurrency::task_completion_event<void> finished;

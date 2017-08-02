@@ -13,7 +13,6 @@ namespace Windows {
             namespace Controls {
                 ref class Grid;
                 ref class TextBlock;
-                ref class Button;
             }
         }
     }
@@ -37,8 +36,6 @@ namespace VBA10
         private: ::Windows::UI::Xaml::Controls::Grid^ LayoutRoot;
         private: ::Windows::UI::Xaml::Controls::Grid^ titleBar;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ versionBlock;
-        private: ::Windows::UI::Xaml::Controls::TextBlock^ contactBlock;
-        private: ::Windows::UI::Xaml::Controls::Button^ gplButton;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ title;
     };
 }

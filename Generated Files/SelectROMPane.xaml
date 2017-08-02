@@ -90,13 +90,8 @@
                     <AppBarButton x:ConnectionId='21' Icon="Undo" Label="**Load" x:Name="loadBtn" 
                                                          IsTabStop="False"
                                   x:Uid="Load"/>
-                    <AppBarButton x:ConnectionId='22' x:Name="spacerBtn" IsEnabled="False" Width="1000"/>
-                    <!--<CommandBar.SecondaryCommands>
-                        <AppBarButton Label="Menu Item 1"/>
-                        <AppBarButton Label="Menu Item 2"/>
-                        <AppBarButton Label="Menu Item 3"/>
-                    </CommandBar.SecondaryCommands>-->
-                </CommandBar>
+            <AppBarButton x:ConnectionId='22' x:Name="spacerBtn" IsEnabled="False" Width="1000"/>
+        </CommandBar>
 
 
 

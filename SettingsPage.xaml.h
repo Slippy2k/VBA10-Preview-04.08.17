@@ -70,8 +70,6 @@ namespace VBA10
 		
 		
 		void ConnectBtn_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
-		void purchaseBtn_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
-
 
 		void OnAdReady(Platform::Object ^sender, Platform::Object ^args);
 		void OnErrorOccurred(Platform::Object ^sender, Microsoft::Advertising::WinRT::UI::AdErrorEventArgs ^args);

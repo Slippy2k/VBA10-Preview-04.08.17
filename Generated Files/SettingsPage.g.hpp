@@ -161,55 +161,50 @@ void ::VBA10::SettingsPage::Connect(int __connectionId, ::Platform::Object^ __ta
             break;
         case 21:
             {
-                this->panelGamepadActivate = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
-            }
-            break;
-        case 22:
-            {
                 this->txtControllerStatus = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
             }
             break;
-        case 23:
+        case 22:
             {
                 this->ConfigureXboxBtn = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->ConfigureXboxBtn))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::VBA10::SettingsPage::*)
                     (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&SettingsPage::ConfigureXboxBtn_Click);
             }
             break;
-        case 24:
+        case 23:
             {
                 this->panelHIDGamepad = safe_cast<::Windows::UI::Xaml::Controls::StackPanel^>(__target);
             }
             break;
-        case 25:
+        case 24:
             {
                 this->cboTurboBehavior = safe_cast<::Windows::UI::Xaml::Controls::ComboBox^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::ComboBox^>(this->cboTurboBehavior))->SelectionChanged += ref new ::Windows::UI::Xaml::Controls::SelectionChangedEventHandler(this, (void (::VBA10::SettingsPage::*)
                     (::Platform::Object^, ::Windows::UI::Xaml::Controls::SelectionChangedEventArgs^))&SettingsPage::cboTurboBehavior_SelectionChanged);
             }
             break;
-        case 26:
+        case 25:
             {
                 this->touchToggle = safe_cast<::Windows::UI::Xaml::Controls::ToggleSwitch^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::ToggleSwitch^>(this->touchToggle))->Toggled += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::VBA10::SettingsPage::*)
                     (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&SettingsPage::touchToggle_Toggled);
             }
             break;
-        case 27:
+        case 26:
             {
                 this->dpadComboBox = safe_cast<::Windows::UI::Xaml::Controls::ComboBox^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::ComboBox^>(this->dpadComboBox))->SelectionChanged += ref new ::Windows::UI::Xaml::Controls::SelectionChangedEventHandler(this, (void (::VBA10::SettingsPage::*)
                     (::Platform::Object^, ::Windows::UI::Xaml::Controls::SelectionChangedEventArgs^))&SettingsPage::dpadComboBox_SelectionChanged_1);
             }
             break;
-        case 28:
+        case 27:
             {
                 this->editButonLayoutBtn = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->editButonLayoutBtn))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::VBA10::SettingsPage::*)
                     (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&SettingsPage::editButonLayoutBtn_Click);
             }
             break;
-        case 29:
+        case 28:
             {
                 this->leftKeyBox = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(this->leftKeyBox))->KeyDown += ref new ::Windows::UI::Xaml::Input::KeyEventHandler(this, (void (::VBA10::SettingsPage::*)
@@ -218,7 +213,7 @@ void ::VBA10::SettingsPage::Connect(int __connectionId, ::Platform::Object^ __ta
                     (::Platform::Object^, ::Windows::UI::Xaml::Input::KeyRoutedEventArgs^))&SettingsPage::leftKeyBox_KeyUp);
             }
             break;
-        case 30:
+        case 29:
             {
                 this->upKeyBox = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(this->upKeyBox))->KeyDown += ref new ::Windows::UI::Xaml::Input::KeyEventHandler(this, (void (::VBA10::SettingsPage::*)
@@ -227,7 +222,7 @@ void ::VBA10::SettingsPage::Connect(int __connectionId, ::Platform::Object^ __ta
                     (::Platform::Object^, ::Windows::UI::Xaml::Input::KeyRoutedEventArgs^))&SettingsPage::upKeyBox_KeyUp);
             }
             break;
-        case 31:
+        case 30:
             {
                 this->rightKeyBox = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(this->rightKeyBox))->KeyDown += ref new ::Windows::UI::Xaml::Input::KeyEventHandler(this, (void (::VBA10::SettingsPage::*)
@@ -236,7 +231,7 @@ void ::VBA10::SettingsPage::Connect(int __connectionId, ::Platform::Object^ __ta
                     (::Platform::Object^, ::Windows::UI::Xaml::Input::KeyRoutedEventArgs^))&SettingsPage::rightKeyBox_KeyUp);
             }
             break;
-        case 32:
+        case 31:
             {
                 this->downKeyBox = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(this->downKeyBox))->KeyDown += ref new ::Windows::UI::Xaml::Input::KeyEventHandler(this, (void (::VBA10::SettingsPage::*)
@@ -245,7 +240,7 @@ void ::VBA10::SettingsPage::Connect(int __connectionId, ::Platform::Object^ __ta
                     (::Platform::Object^, ::Windows::UI::Xaml::Input::KeyRoutedEventArgs^))&SettingsPage::downKeyBox_KeyUp);
             }
             break;
-        case 33:
+        case 32:
             {
                 this->bKeyBox = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(this->bKeyBox))->KeyDown += ref new ::Windows::UI::Xaml::Input::KeyEventHandler(this, (void (::VBA10::SettingsPage::*)
@@ -254,7 +249,7 @@ void ::VBA10::SettingsPage::Connect(int __connectionId, ::Platform::Object^ __ta
                     (::Platform::Object^, ::Windows::UI::Xaml::Input::KeyRoutedEventArgs^))&SettingsPage::bKeyBox_KeyUp);
             }
             break;
-        case 34:
+        case 33:
             {
                 this->aKeyBox = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(this->aKeyBox))->KeyDown += ref new ::Windows::UI::Xaml::Input::KeyEventHandler(this, (void (::VBA10::SettingsPage::*)
@@ -263,12 +258,12 @@ void ::VBA10::SettingsPage::Connect(int __connectionId, ::Platform::Object^ __ta
                     (::Platform::Object^, ::Windows::UI::Xaml::Input::KeyRoutedEventArgs^))&SettingsPage::aKeyBox_KeyUp);
             }
             break;
-        case 35:
+        case 34:
             {
                 this->lKeyLabel = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
             }
             break;
-        case 36:
+        case 35:
             {
                 this->lKeyBox = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(this->lKeyBox))->KeyDown += ref new ::Windows::UI::Xaml::Input::KeyEventHandler(this, (void (::VBA10::SettingsPage::*)
@@ -277,12 +272,12 @@ void ::VBA10::SettingsPage::Connect(int __connectionId, ::Platform::Object^ __ta
                     (::Platform::Object^, ::Windows::UI::Xaml::Input::KeyRoutedEventArgs^))&SettingsPage::lKeyBox_KeyUp);
             }
             break;
-        case 37:
+        case 36:
             {
                 this->rKeyLabel = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
             }
             break;
-        case 38:
+        case 37:
             {
                 this->rKeyBox = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(this->rKeyBox))->KeyDown += ref new ::Windows::UI::Xaml::Input::KeyEventHandler(this, (void (::VBA10::SettingsPage::*)
@@ -291,7 +286,7 @@ void ::VBA10::SettingsPage::Connect(int __connectionId, ::Platform::Object^ __ta
                     (::Platform::Object^, ::Windows::UI::Xaml::Input::KeyRoutedEventArgs^))&SettingsPage::rKeyBox_KeyUp);
             }
             break;
-        case 39:
+        case 38:
             {
                 this->startKeyBox = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(this->startKeyBox))->KeyDown += ref new ::Windows::UI::Xaml::Input::KeyEventHandler(this, (void (::VBA10::SettingsPage::*)
@@ -300,7 +295,7 @@ void ::VBA10::SettingsPage::Connect(int __connectionId, ::Platform::Object^ __ta
                     (::Platform::Object^, ::Windows::UI::Xaml::Input::KeyRoutedEventArgs^))&SettingsPage::startKeyBox_KeyUp);
             }
             break;
-        case 40:
+        case 39:
             {
                 this->selectKeyBox = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(this->selectKeyBox))->KeyDown += ref new ::Windows::UI::Xaml::Input::KeyEventHandler(this, (void (::VBA10::SettingsPage::*)
@@ -309,7 +304,7 @@ void ::VBA10::SettingsPage::Connect(int __connectionId, ::Platform::Object^ __ta
                     (::Platform::Object^, ::Windows::UI::Xaml::Input::KeyRoutedEventArgs^))&SettingsPage::selectKeyBox_KeyUp);
             }
             break;
-        case 41:
+        case 40:
             {
                 this->turboModeBox = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(this->turboModeBox))->KeyDown += ref new ::Windows::UI::Xaml::Input::KeyEventHandler(this, (void (::VBA10::SettingsPage::*)
@@ -318,103 +313,84 @@ void ::VBA10::SettingsPage::Connect(int __connectionId, ::Platform::Object^ __ta
                     (::Platform::Object^, ::Windows::UI::Xaml::Input::KeyRoutedEventArgs^))&SettingsPage::turboModeBox_KeyUp_1);
             }
             break;
-        case 42:
+        case 41:
             {
                 this->controllerOpacitySlider = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->controllerOpacitySlider))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::VBA10::SettingsPage::*)
                     (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&SettingsPage::controllerOpacitySlider_ValueChanged_1);
             }
             break;
-        case 43:
+        case 42:
             {
                 this->controllerOpacityToggle = safe_cast<::Windows::UI::Xaml::Controls::Primitives::ToggleButton^>(__target);
             }
             break;
-        case 44:
+        case 43:
             {
                 this->buttonScaleSlider = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->buttonScaleSlider))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::VBA10::SettingsPage::*)
                     (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&SettingsPage::buttonScaleSlider_ValueChanged_1);
             }
             break;
-        case 45:
+        case 44:
             {
                 this->buttonScaleToggle = safe_cast<::Windows::UI::Xaml::Controls::Primitives::ToggleButton^>(__target);
             }
             break;
-        case 46:
+        case 45:
             {
                 this->controllerScaleSlider = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->controllerScaleSlider))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::VBA10::SettingsPage::*)
                     (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&SettingsPage::controllerScaleSlider_ValueChanged_1);
             }
             break;
-        case 47:
+        case 46:
             {
                 this->controllerScaleToggle = safe_cast<::Windows::UI::Xaml::Controls::Primitives::ToggleButton^>(__target);
             }
             break;
-        case 48:
+        case 47:
             {
                 this->deadzoneSlider = safe_cast<::Windows::UI::Xaml::Controls::Slider^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::Slider^>(this->deadzoneSlider))->ValueChanged += ref new ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventHandler(this, (void (::VBA10::SettingsPage::*)
                     (::Platform::Object^, ::Windows::UI::Xaml::Controls::Primitives::RangeBaseValueChangedEventArgs^))&SettingsPage::deadzoneSlider_ValueChanged_1);
             }
             break;
-        case 49:
+        case 48:
             {
                 this->deadzoneToggle = safe_cast<::Windows::UI::Xaml::Controls::Primitives::ToggleButton^>(__target);
             }
             break;
-        case 50:
+        case 49:
             {
                 this->txtHIDGamepad = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
             }
             break;
-        case 51:
+        case 50:
             {
                 this->lbHIDGamepad = safe_cast<::Windows::UI::Xaml::Controls::ListBox^>(__target);
             }
             break;
-        case 52:
+        case 51:
             {
                 this->panelHIDConnect = safe_cast<::Windows::UI::Xaml::Controls::Grid^>(__target);
             }
             break;
-        case 53:
+        case 52:
             {
                 this->ConfigureBtn = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->ConfigureBtn))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::VBA10::SettingsPage::*)
                     (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&SettingsPage::ConfigureBtn_Click);
             }
             break;
-        case 54:
+        case 53:
             {
                 this->ConnectBtn = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
                 (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->ConnectBtn))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::VBA10::SettingsPage::*)
                     (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&SettingsPage::ConnectBtn_Click);
             }
             break;
-        case 55:
-            {
-                this->purchaseBtn = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
-                (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->purchaseBtn))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::VBA10::SettingsPage::*)
-                    (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&SettingsPage::purchaseBtn_Click);
-            }
-            break;
-        case 56:
-            {
-                this->watchVideoBtn = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
-                (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->watchVideoBtn))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::VBA10::SettingsPage::*)
-                    (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&SettingsPage::watchVideobtn_Click);
-            }
-            break;
-        case 57:
-            {
-                this->runBuyNotice = safe_cast<::Windows::UI::Xaml::Documents::Run^>(__target);
-            }
-            break;
-        case 58:
+        case 54:
             {
                 this->title = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
             }

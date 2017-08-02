@@ -246,9 +246,6 @@
   <data name="PleaseWaitDownloadText" xml:space="preserve">
     <value>Please wait until all files have finished downloading.</value>
   </data>
-  <data name="PurchaseText" xml:space="preserve">
-    <value>Purchase</value>
-  </data>
   <data name="RestoreSaveInstruction.Text" xml:space="preserve">
     <value>1. Quit the app completelely.
 2. Make sure the name of the save file match the name  of the rom exactly (except the extension).
@@ -312,9 +309,6 @@
   <data name="ButtonText" xml:space="preserve">
     <value>Button</value>
   </data>
-  <data name="BuyBtn.Content" xml:space="preserve">
-    <value>Buy</value>
-  </data>
   <data name="CancelBtn.Content" xml:space="preserve">
     <value>Cancel</value>
   </data>
@@ -338,9 +332,6 @@
   </data>
   <data name="Deadzone.Text" xml:space="preserve">
     <value>Deadzone (analog stick): </value>
-  </data>
-  <data name="DearVBA10Users.Text" xml:space="preserve">
-    <value>Dear VBA10 Users:</value>
   </data>
   <data name="DeleteROMPrompt" xml:space="preserve">
     <value>This will *delete* the ROM file and save files from the app's private storage. Continue?</value>
@@ -408,12 +399,6 @@
   <data name="FrameSkipTurbo.Header" xml:space="preserve">
     <value>Frame skip (turbo mode)</value>
   </data>
-  <data name="GamepadInstruction1.Text" xml:space="preserve">
-    <value>Both Xbox and generic HID gamepads are supported.</value>
-  </data>
-  <data name="GamepadInstruction2.Text" xml:space="preserve">
-    <value> Buy premium feature package or watch a short video to enable this feature.</value>
-  </data>
   <data name="General.Header" xml:space="preserve">
     <value>General</value>
   </data>
@@ -468,12 +453,6 @@
   <data name="LoadConfirmPrompt" xml:space="preserve">
     <value>Are you sure you want to load? All unsaved progress will be lost.</value>
   </data>
-  <data name="LoadingProduct.Text" xml:space="preserve">
-    <value>Loading production list. Please wait...</value>
-  </data>
-  <data name="LoadingProductError.Text" xml:space="preserve">
-    <value>Error! No Internet connection or Microsoft server error. Please try again later.</value>
-  </data>
   <data name="LoadProductBtn.Content" xml:space="preserve">
     <value>Load products</value>
   </data>
@@ -521,27 +500,6 @@
   </data>
   <data name="ProcessingText" xml:space="preserve">
     <value>Processing...</value>
-  </data>
-  <data name="ProductNotAvailableText" xml:space="preserve">
-    <value>Product is not available at the moment.</value>
-  </data>
-  <data name="PurchaseBtn.Content" xml:space="preserve">
-    <value>Purchase</value>
-  </data>
-  <data name="PurchasedThankText" xml:space="preserve">
-    <value>Purchased, thank you!</value>
-  </data>
-  <data name="PurchaseSuccessNoAdsText" xml:space="preserve">
-    <value>Purchase successful, ads will not be shown the next time you start the app.</value>
-  </data>
-  <data name="PurchaseSuccessText" xml:space="preserve">
-    <value>Purchase successful.</value>
-  </data>
-  <data name="PurchaseWarning1.Text" xml:space="preserve">
-    <value>This is a *warning* about in-app purchase in Windows 10. For a small percentage of Microsoft accounts, mine included, after you purchase the in-app products, you will experience the following problems: (1) app crashes upon opening, (2) app can no longer be downloaded from store due to error 0x803F7002, and (3) even if you sideload the app, the store still reports the product as not purchased.</value>
-  </data>
-  <data name="PurchaseWarning2.Text" xml:space="preserve">
-    <value>If you want to take risk, click on the button below to load the products. Keep in mind that Microsoft handles all the purchases, so I cannot refund you anything should your purchase does not work. I can, however, provide you with the .appx to sideload if you can no longer download the app. To current VBA8 paid users: version 2.27 is now availalbe which lets you request VBA10 unlock codes, but be aware: using an unlock code has all the same bugs as paying for the products, except you won't lose money.</value>
   </data>
   <data name="RemoveROMPrompt" xml:space="preserve">
     <value>This will remove the ROM entry from the app's list. Your actual ROM files and save files will not be affected. Continue?</value>
@@ -642,9 +600,6 @@
   <data name="WarningText" xml:space="preserve">
     <value>Warning</value>
   </data>
-  <data name="WatchVideoBtn.Content" xml:space="preserve">
-    <value>Watch Video</value>
-  </data>
   <data name="WatchWholeVideoError" xml:space="preserve">
     <value>You need to watch the whole video to activate the feature.</value>
   </data>
@@ -687,9 +642,6 @@
   <data name="XboxGamepadConfig.Text" xml:space="preserve">
     <value>Xbox Gamepad Config</value>
   </data>
-  <data name="PURCHASE.Text" xml:space="preserve">
-    <value>PURCHASE</value>
-  </data>
   <data name="SETTINGS.Text" xml:space="preserve">
     <value>SETTINGS</value>
   </data>
@@ -699,8 +651,8 @@
   <data name="WatchVideoPrompt" xml:space="preserve">
     <value>To use it, please go to Settings to watch a video.</value>
   </data>
-  <data name="PurchaseWarning3.Text" xml:space="preserve">
-    <value>If you want to take risk, go ahead but keep in mind that Microsoft handles all the purchases, so I cannot refund you anything should your purchase does not work.</value>
+  <data name="CheckNewVersion.Text" xml:space="preserve">
+    <value>Check New Version: </value>
   </data>
   <data name="Core.Text" xml:space="preserve">
     <value>Core: Duchuule</value>
@@ -711,7 +663,22 @@
   <data name="DevTeam.Text" xml:space="preserve">
     <value>2017 Longhorn Technology</value>
   </data>
+  <data name="Github.Text" xml:space="preserve">
+    <value>Github: </value>
+  </data>
+  <data name="GithubOld.Text" xml:space="preserve">
+    <value>Github (old): </value>
+  </data>
+  <data name="Gpl.Text" xml:space="preserve">
+    <value>Gpl: </value>
+  </data>
   <data name="Inspire.Text" xml:space="preserve">
     <value>Inspire: Commander Harper</value>
+  </data>
+  <data name="Source.Text" xml:space="preserve">
+    <value>Source: </value>
+  </data>
+  <data name="Translate.Text" xml:space="preserve">
+    <value>Help Us with Translation: </value>
   </data>
 </root>

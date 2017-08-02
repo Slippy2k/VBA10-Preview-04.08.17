@@ -44,19 +44,54 @@ void ::VBA10::HelpPage::Connect(int __connectionId, ::Platform::Object^ __target
             break;
         case 4:
             {
-                this->contactBlock = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
-                (safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(this->contactBlock))->Tapped += ref new ::Windows::UI::Xaml::Input::TappedEventHandler(this, (void (::VBA10::HelpPage::*)
+                ::Windows::UI::Xaml::Controls::TextBlock^ element4 = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+                (safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(element4))->Tapped += ref new ::Windows::UI::Xaml::Input::TappedEventHandler(this, (void (::VBA10::HelpPage::*)
                     (::Platform::Object^, ::Windows::UI::Xaml::Input::TappedRoutedEventArgs^))&HelpPage::contactBlock_Tapped);
             }
             break;
         case 5:
             {
-                this->gplButton = safe_cast<::Windows::UI::Xaml::Controls::Button^>(__target);
-                (safe_cast<::Windows::UI::Xaml::Controls::Button^>(this->gplButton))->Click += ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::VBA10::HelpPage::*)
-                    (::Platform::Object^, ::Windows::UI::Xaml::RoutedEventArgs^))&HelpPage::gplButton_Click);
+                ::Windows::UI::Xaml::Controls::TextBlock^ element5 = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+                (safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(element5))->Tapped += ref new ::Windows::UI::Xaml::Input::TappedEventHandler(this, (void (::VBA10::HelpPage::*)
+                    (::Platform::Object^, ::Windows::UI::Xaml::Input::TappedRoutedEventArgs^))&HelpPage::SourceBlock_Tapped);
             }
             break;
         case 6:
+            {
+                ::Windows::UI::Xaml::Controls::TextBlock^ element6 = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+                (safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(element6))->Tapped += ref new ::Windows::UI::Xaml::Input::TappedEventHandler(this, (void (::VBA10::HelpPage::*)
+                    (::Platform::Object^, ::Windows::UI::Xaml::Input::TappedRoutedEventArgs^))&HelpPage::GithubOld_Tapped);
+            }
+            break;
+        case 7:
+            {
+                ::Windows::UI::Xaml::Controls::TextBlock^ element7 = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+                (safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(element7))->Tapped += ref new ::Windows::UI::Xaml::Input::TappedEventHandler(this, (void (::VBA10::HelpPage::*)
+                    (::Platform::Object^, ::Windows::UI::Xaml::Input::TappedRoutedEventArgs^))&HelpPage::Github_Tapped);
+            }
+            break;
+        case 8:
+            {
+                ::Windows::UI::Xaml::Controls::TextBlock^ element8 = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+                (safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(element8))->Tapped += ref new ::Windows::UI::Xaml::Input::TappedEventHandler(this, (void (::VBA10::HelpPage::*)
+                    (::Platform::Object^, ::Windows::UI::Xaml::Input::TappedRoutedEventArgs^))&HelpPage::CheckNewVersion_Tapped);
+            }
+            break;
+        case 9:
+            {
+                ::Windows::UI::Xaml::Controls::TextBlock^ element9 = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+                (safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(element9))->Tapped += ref new ::Windows::UI::Xaml::Input::TappedEventHandler(this, (void (::VBA10::HelpPage::*)
+                    (::Platform::Object^, ::Windows::UI::Xaml::Input::TappedRoutedEventArgs^))&HelpPage::TransLate_Tapped);
+            }
+            break;
+        case 10:
+            {
+                ::Windows::UI::Xaml::Controls::TextBlock^ element10 = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
+                (safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(element10))->Tapped += ref new ::Windows::UI::Xaml::Input::TappedEventHandler(this, (void (::VBA10::HelpPage::*)
+                    (::Platform::Object^, ::Windows::UI::Xaml::Input::TappedRoutedEventArgs^))&HelpPage::Gpl_Tapped);
+            }
+            break;
+        case 11:
             {
                 this->title = safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(__target);
             }

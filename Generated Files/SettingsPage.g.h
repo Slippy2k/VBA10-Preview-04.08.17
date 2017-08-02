@@ -44,15 +44,6 @@ namespace Windows {
         }
     }
 }
-namespace Windows {
-    namespace UI {
-        namespace Xaml {
-            namespace Documents {
-                ref class Run;
-            }
-        }
-    }
-}
 
 namespace VBA10
 {
@@ -89,7 +80,6 @@ namespace VBA10
         private: ::Windows::UI::Xaml::Controls::ToggleSwitch^ fullscreenToggle;
         private: ::Windows::UI::Xaml::Controls::StackPanel^ InputStackPanel;
         private: ::Windows::UI::Xaml::Data::CollectionViewSource^ vsControllerList;
-        private: ::Windows::UI::Xaml::Controls::Grid^ panelGamepadActivate;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ txtControllerStatus;
         private: ::Windows::UI::Xaml::Controls::Button^ ConfigureXboxBtn;
         private: ::Windows::UI::Xaml::Controls::StackPanel^ panelHIDGamepad;
@@ -123,9 +113,6 @@ namespace VBA10
         private: ::Windows::UI::Xaml::Controls::Grid^ panelHIDConnect;
         private: ::Windows::UI::Xaml::Controls::Button^ ConfigureBtn;
         private: ::Windows::UI::Xaml::Controls::Button^ ConnectBtn;
-        private: ::Windows::UI::Xaml::Controls::Button^ purchaseBtn;
-        private: ::Windows::UI::Xaml::Controls::Button^ watchVideoBtn;
-        private: ::Windows::UI::Xaml::Documents::Run^ runBuyNotice;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ title;
     };
 }

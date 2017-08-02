@@ -24,7 +24,6 @@
 #include "CheatPane.xaml.h"
 #include "ExportPage.xaml.h"
 #include "ImportPage.xaml.h"
-#include "PurchasePage.xaml.h"
 #include "BlankPage.xaml.h"
 
 

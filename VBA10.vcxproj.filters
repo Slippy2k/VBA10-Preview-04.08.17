@@ -335,7 +335,6 @@
     <ClCompile Include="Converter.cpp" />
     <ClCompile Include="EmulatorSettings.cpp" />
     <ClCompile Include="PurchasePage.xaml.cpp" />
-    <ClCompile Include="AdControl.xaml.cpp" />
     <ClCompile Include="stringhelper.cpp" />
     <ClCompile Include="Definitions.cpp" />
     <ClCompile Include="FileBrowserPane.xaml.cpp" />
@@ -607,7 +606,6 @@
     <ClInclude Include="Converter.h" />
     <ClInclude Include="EmulatorSettings.h" />
     <ClInclude Include="PurchasePage.xaml.h" />
-    <ClInclude Include="AdControl.xaml.h" />
     <ClInclude Include="live_connect.h" />
     <ClInclude Include="stringhelper.h" />
     <ClInclude Include="FileBrowserPane.xaml.h" />
@@ -669,7 +667,6 @@
     <Page Include="ImportPage.xaml" />
     <Page Include="StandardStyles.xaml" />
     <Page Include="SelectFilePane.xaml" />
-    <Page Include="PurchasePage.xaml" />
     <Page Include="FileBrowserPane.xaml" />
     <Page Include="SelectFilesPane.xaml" />
     <Page Include="HIDGamepadConfig.xaml" />
@@ -881,15 +878,6 @@
       <Filter>Assets</Filter>
     </Image>
     <Image Include="Assets\StoreLogo.scale-400.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="Assets\noad_icon.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="Assets\noad_plus_icon.png">
-      <Filter>Assets</Filter>
-    </Image>
-    <Image Include="Assets\plus_sign.png">
       <Filter>Assets</Filter>
     </Image>
     <Image Include="Assets\AppList.targetsize-16_altform-unplated.png">

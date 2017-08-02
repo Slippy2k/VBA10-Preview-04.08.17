@@ -17,7 +17,6 @@
 #include "App.xaml.h"
 #include "HIDGamepadConfig.xaml.h"
 #include "ImportPage.xaml.h"
-#include "PurchasePage.xaml.h"
 #include "SelectFilePane.xaml.h"
 #include "SelectFilesPane.xaml.h"
 #include "SelectROMPane.xaml.h"
@@ -34,7 +33,6 @@
 #include "App.g.hpp"
 #include "HIDGamepadConfig.g.hpp"
 #include "ImportPage.g.hpp"
-#include "PurchasePage.g.hpp"
 #include "SelectFilePane.g.hpp"
 #include "SelectFilesPane.g.hpp"
 #include "SelectROMPane.g.hpp"
@@ -125,12 +123,6 @@ template<typename TDeclaringType, typename TValue>
 ::Platform::Object^ GetValueTypeMember_Type(::Platform::Object^ instance)
 {
     return ref new ::Platform::Box<TValue>(safe_cast<TDeclaringType^>(instance)->Type);
-}
-
-template<typename TDeclaringType, typename TValue>
-::Platform::Object^ GetValueTypeMember_BuyNowButtonVisible(::Platform::Object^ instance)
-{
-    return ref new ::Platform::Box<TValue>(safe_cast<TDeclaringType^>(instance)->BuyNowButtonVisible);
 }
 
 template<typename TDeclaringType>
@@ -241,34 +233,10 @@ template<typename TDeclaringType>
     return safe_cast<TDeclaringType^>(instance)->OneDriveID;
 }
 
-template<typename TDeclaringType>
-::Platform::Object^ GetReferenceTypeMember_key(::Platform::Object^ instance)
-{
-    return safe_cast<TDeclaringType^>(instance)->key;
-}
-
-template<typename TDeclaringType>
-::Platform::Object^ GetReferenceTypeMember_Status(::Platform::Object^ instance)
-{
-    return safe_cast<TDeclaringType^>(instance)->Status;
-}
-
-template<typename TDeclaringType>
-::Platform::Object^ GetReferenceTypeMember_imgLink(::Platform::Object^ instance)
-{
-    return safe_cast<TDeclaringType^>(instance)->imgLink;
-}
-
 template<typename TDeclaringType, typename TValue>
 void SetEnumMember_Type(::Platform::Object^ instance, ::Platform::Object^ value)
 {
     safe_cast<TDeclaringType^>(instance)->Type = safe_cast<::Platform::IBox<TValue>^>(value)->Value;
-}
-
-template<typename TDeclaringType, typename TValue>
-void SetEnumMember_BuyNowButtonVisible(::Platform::Object^ instance, ::Platform::Object^ value)
-{
-    safe_cast<TDeclaringType^>(instance)->BuyNowButtonVisible = safe_cast<::Platform::IBox<TValue>^>(value)->Value;
 }
 
 template<typename TDeclaringType, typename TValue>
@@ -421,24 +389,6 @@ void SetReferenceTypeMember_Name(::Platform::Object^ instance, ::Platform::Objec
     safe_cast<TDeclaringType^>(instance)->Name = safe_cast<TValue^>(value);
 }
 
-template<typename TDeclaringType, typename TValue>
-void SetReferenceTypeMember_key(::Platform::Object^ instance, ::Platform::Object^ value)
-{
-    safe_cast<TDeclaringType^>(instance)->key = safe_cast<TValue^>(value);
-}
-
-template<typename TDeclaringType, typename TValue>
-void SetReferenceTypeMember_Status(::Platform::Object^ instance, ::Platform::Object^ value)
-{
-    safe_cast<TDeclaringType^>(instance)->Status = safe_cast<TValue^>(value);
-}
-
-template<typename TDeclaringType, typename TValue>
-void SetReferenceTypeMember_imgLink(::Platform::Object^ instance, ::Platform::Object^ value)
-{
-    safe_cast<TDeclaringType^>(instance)->imgLink = safe_cast<TValue^>(value);
-}
-
 struct TypeInfo
 {
     PCWSTR  typeName;
@@ -492,19 +442,19 @@ TypeInfo TypeInfos[] =
     //   5
     L"VBA10.HelpPage", L"",
     &ActivateType<::VBA10::HelpPage>, nullptr, nullptr, nullptr,
-    37, // Windows.UI.Xaml.Controls.Page
+    34, // Windows.UI.Xaml.Controls.Page
     0, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, false, false,
     //   6
     L"VBA10.BlankPage", L"",
     &ActivateType<::VBA10::BlankPage>, nullptr, nullptr, nullptr,
-    37, // Windows.UI.Xaml.Controls.Page
+    34, // Windows.UI.Xaml.Controls.Page
     0, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, false, false,
     //   7
     L"VBA10.CheatPane", L"",
     &ActivateType<::VBA10::CheatPane>, nullptr, nullptr, nullptr,
-    37, // Windows.UI.Xaml.Controls.Page
+    34, // Windows.UI.Xaml.Controls.Page
     0, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, false, false,
     //   8
@@ -534,13 +484,13 @@ TypeInfo TypeInfos[] =
     //  12
     L"VBA10.ExportPage", L"",
     &ActivateType<::VBA10::ExportPage>, nullptr, nullptr, nullptr,
-    37, // Windows.UI.Xaml.Controls.Page
+    34, // Windows.UI.Xaml.Controls.Page
     4, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, false, false,
     //  13
     L"VBA10.ImportPage", L"",
     &ActivateType<::VBA10::ImportPage>, nullptr, nullptr, nullptr,
-    37, // Windows.UI.Xaml.Controls.Page
+    34, // Windows.UI.Xaml.Controls.Page
     4, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, false, false,
     //  14
@@ -552,188 +502,170 @@ TypeInfo TypeInfos[] =
     //  15
     L"VBA10.DirectXPage", L"",
     &ActivateType<::VBA10::DirectXPage>, nullptr, nullptr, nullptr,
-    37, // Windows.UI.Xaml.Controls.Page
+    34, // Windows.UI.Xaml.Controls.Page
     17, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, false, false,
     //  16
-    L"VBA10.ProductItem", L"",
-    &ActivateType<::VBA10::ProductItem>, nullptr, nullptr, nullptr,
-    1, // Object
-    18, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
-    true,  false, false, true, 
-    //  17
-    L"VBA10.PurchasePage", L"",
-    &ActivateType<::VBA10::PurchasePage>, nullptr, nullptr, nullptr,
-    37, // Windows.UI.Xaml.Controls.Page
-    23, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
-    true,  false, false, false,
-    //  18
     L"VBA10.SettingsPage", L"",
     &ActivateType<::VBA10::SettingsPage>, nullptr, nullptr, nullptr,
-    37, // Windows.UI.Xaml.Controls.Page
-    23, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
+    34, // Windows.UI.Xaml.Controls.Page
+    18, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, false, false,
-    //  19
+    //  17
     L"VBA10.SelectROMPane", L"",
     &ActivateType<::VBA10::SelectROMPane>, nullptr, nullptr, nullptr,
-    37, // Windows.UI.Xaml.Controls.Page
-    23, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
+    34, // Windows.UI.Xaml.Controls.Page
+    18, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, false, false,
-    //  20
+    //  18
     L"VBA10.SelectFilePane", L"",
     nullptr, nullptr, nullptr, nullptr,
-    42, // Windows.UI.Xaml.Controls.UserControl
-    23, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
+    39, // Windows.UI.Xaml.Controls.UserControl
+    18, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, false, false,
-    //  21
+    //  19
     L"VBA10.XboxConfigPage", L"",
     &ActivateType<::VBA10::XboxConfigPage>, nullptr, nullptr, nullptr,
-    37, // Windows.UI.Xaml.Controls.Page
-    24, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
+    34, // Windows.UI.Xaml.Controls.Page
+    19, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, false, false,
-    //  22
+    //  20
     L"VBA10.FileBrowserPane", L"",
     &ActivateType<::VBA10::FileBrowserPane>, nullptr, nullptr, nullptr,
-    37, // Windows.UI.Xaml.Controls.Page
-    24, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
+    34, // Windows.UI.Xaml.Controls.Page
+    19, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, false, false,
-    //  23
+    //  21
     L"VBA10.SelectFilesPane", L"",
     nullptr, nullptr, nullptr, nullptr,
-    42, // Windows.UI.Xaml.Controls.UserControl
-    24, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
+    39, // Windows.UI.Xaml.Controls.UserControl
+    19, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, false, false,
-    //  24
+    //  22
     L"VBA10.SelectStatePane", L"",
     nullptr, nullptr, nullptr, nullptr,
-    42, // Windows.UI.Xaml.Controls.UserControl
-    25, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
+    39, // Windows.UI.Xaml.Controls.UserControl
+    20, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, false, false,
-    //  25
+    //  23
     L"VBA10.HIDGamepadConfig", L"",
     &ActivateType<::VBA10::HIDGamepadConfig>, nullptr, nullptr, nullptr,
-    37, // Windows.UI.Xaml.Controls.Page
-    25, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
+    34, // Windows.UI.Xaml.Controls.Page
+    20, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, false, false,
-    //  26
+    //  24
     L"VBA10.StorageFileModel", L"",
     nullptr, nullptr, nullptr, nullptr,
     1, // Object
-    25, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
+    20, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, false, true, 
-    //  27
+    //  25
     L"VBA10.OneDriveFileItem", L"",
     &ActivateType<::VBA10::OneDriveFileItem>, nullptr, nullptr, nullptr,
     1, // Object
-    29, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
+    24, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, false, true, 
-    //  28
+    //  26
     L"VBA10.OneDriveItemType", L"",
     nullptr, nullptr, nullptr, &FromStringConverter<::VBA10::OneDriveItemType>,
     4, // System.Enum
-    37, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
+    32, 0, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, false, false,
-    //  29
+    //  27
     L"System.MulticastDelegate", L"",
     nullptr, nullptr, nullptr, nullptr,
     8, // System.Delegate
-    37, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
+    32, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
     false, false, false, false,
-    //  30
+    //  28
     L"VBA10.StorageFolderModel", L"",
     nullptr, nullptr, nullptr, nullptr,
     1, // Object
-    37, 8, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
+    32, 8, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, false, true, 
-    //  31
+    //  29
     L"VBA10.VisibilityConverter", L"",
     &ActivateType<::VBA10::VisibilityConverter>, nullptr, nullptr, nullptr,
     1, // Object
-    40, 8, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
+    35, 8, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, false, false,
-    //  32
+    //  30
     L"VBA10.FileSelectedDelegate", L"",
     nullptr, nullptr, nullptr, nullptr,
-    29, // System.MulticastDelegate
-    40, 8, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
+    27, // System.MulticastDelegate
+    35, 8, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, true,  false,
-    //  33
-    L"Windows.UI.Xaml.Visibility", L"",
-    nullptr, nullptr, nullptr, nullptr,
-    -1,
-    40, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
-    false, true,  false, false,
-    //  34
+    //  31
     L"VBA10.FilesSelectedDelegate", L"",
     nullptr, nullptr, nullptr, nullptr,
-    29, // System.MulticastDelegate
-    40, 8, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
+    27, // System.MulticastDelegate
+    35, 8, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, true,  false,
-    //  35
+    //  32
     L"Windows.Storage.StorageFile", L"",
     nullptr, nullptr, nullptr, nullptr,
     1, // Object
-    40, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
+    35, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
     false, false, true,  false,
-    //  36
+    //  33
     L"Windows.Foundation.DateTime", L"",
     nullptr, nullptr, nullptr, nullptr,
     11, // System.ValueType
-    40, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
+    35, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
     false, false, true,  false,
-    //  37
+    //  34
     L"Windows.UI.Xaml.Controls.Page", L"",
     nullptr, nullptr, nullptr, nullptr,
     -1,
-    40, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
+    35, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
     false, true,  false, false,
-    //  38
+    //  35
     L"Windows.Storage.StorageFolder", L"",
     nullptr, nullptr, nullptr, nullptr,
     1, // Object
-    40, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
+    35, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
     false, false, true,  false,
-    //  39
+    //  36
     L"VBA10.Controls.NavMenuListView", L"",
     &ActivateType<::VBA10::Controls::NavMenuListView>, nullptr, nullptr, nullptr,
-    41, // Windows.UI.Xaml.Controls.ListView
-    40, 8, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
+    38, // Windows.UI.Xaml.Controls.ListView
+    35, 8, ::Windows::UI::Xaml::Interop::TypeKind::Custom,
     true,  false, false, false,
-    //  40
+    //  37
     L"Windows.UI.Xaml.Controls.Frame", L"",
     nullptr, nullptr, nullptr, nullptr,
     -1,
-    40, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
+    35, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
     false, true,  false, false,
-    //  41
+    //  38
     L"Windows.UI.Xaml.Controls.ListView", L"",
     nullptr, nullptr, nullptr, nullptr,
     -1,
-    40, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
+    35, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
     false, true,  false, false,
-    //  42
+    //  39
     L"Windows.UI.Xaml.Controls.UserControl", L"",
     nullptr, nullptr, nullptr, nullptr,
     -1,
-    40, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
+    35, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
     false, true,  false, false,
-    //  43
+    //  40
     L"Windows.UI.Xaml.Controls.ItemsControl", L"",
     nullptr, nullptr, nullptr, nullptr,
     -1,
-    40, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
+    35, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
     false, true,  false, false,
-    //  44
+    //  41
     L"Windows.UI.Xaml.Media.Imaging.BitmapSource", L"",
     nullptr, nullptr, nullptr, nullptr,
     -1,
-    40, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
+    35, 8, ::Windows::UI::Xaml::Interop::TypeKind::Metadata,
     false, true,  false, false,
     //  Last type here is for padding
     L"", L"",
     nullptr, nullptr, nullptr, nullptr,
     -1, 
-    40, 8,::Windows::UI::Xaml::Interop::TypeKind::Custom,
+    35, 8,::Windows::UI::Xaml::Interop::TypeKind::Custom,
     false, false, false, false,
 };
 
@@ -756,32 +688,32 @@ UINT TypeInfoLookup[] = {
       6,   //  15
      10,   //  16
      15,   //  17
-     17,   //  18
-     19,   //  19
-     20,   //  20
-     22,   //  21
-     25,   //  22
-     29,   //  23
-     29,   //  24
-     31,   //  25
-     32,   //  26
-     34,   //  27
-     37,   //  28
-     37,   //  29
-     39,   //  30
-     41,   //  31
-     41,   //  32
-     41,   //  33
-     42,   //  34
-     42,   //  35
-     42,   //  36
-     43,   //  37
-     44,   //  38
-     44,   //  39
-     44,   //  40
-     44,   //  41
-     44,   //  42
-     45,   //  43
+     16,   //  18
+     17,   //  19
+     18,   //  20
+     20,   //  21
+     23,   //  22
+     27,   //  23
+     27,   //  24
+     29,   //  25
+     30,   //  26
+     31,   //  27
+     34,   //  28
+     34,   //  29
+     36,   //  30
+     38,   //  31
+     38,   //  32
+     38,   //  33
+     39,   //  34
+     39,   //  35
+     39,   //  36
+     40,   //  37
+     41,   //  38
+     41,   //  39
+     41,   //  40
+     41,   //  41
+     41,   //  42
+     42,   //  43
 };
 
 struct EnumValueInfo
@@ -848,7 +780,7 @@ MemberInfo MemberInfos[] =
     L"Snapshot",
     &GetReferenceTypeMember_Snapshot<::VBA10::ROMDBEntry>,
     &SetReferenceTypeMember_Snapshot<::VBA10::ROMDBEntry, ::Windows::UI::Xaml::Media::Imaging::BitmapSource>,
-    44, // Windows.UI.Xaml.Media.Imaging.BitmapSource
+    41, // Windows.UI.Xaml.Media.Imaging.BitmapSource
     -1,
     false, false, false,
     //   5 - VBA10.ROMDBEntry.AutoLoadLastState
@@ -862,14 +794,14 @@ MemberInfo MemberInfos[] =
     L"File",
     &GetReferenceTypeMember_File<::VBA10::ROMDBEntry>,
     &SetReferenceTypeMember_File<::VBA10::ROMDBEntry, ::Windows::Storage::StorageFile>,
-    35, // Windows.Storage.StorageFile
+    32, // Windows.Storage.StorageFile
     -1,
     false, false, false,
     //   7 - VBA10.ROMDBEntry.Folder
     L"Folder",
     &GetReferenceTypeMember_Folder<::VBA10::ROMDBEntry>,
     &SetReferenceTypeMember_Folder<::VBA10::ROMDBEntry, ::Windows::Storage::StorageFolder>,
-    38, // Windows.Storage.StorageFolder
+    35, // Windows.Storage.StorageFolder
     -1,
     false, false, false,
     //   8 - VBA10.ROMDBEntry.SnapshotUri
@@ -897,7 +829,7 @@ MemberInfo MemberInfos[] =
     L"LastPlayed",
     &GetValueTypeMember_LastPlayed<::VBA10::ROMDBEntry, ::Windows::Foundation::DateTime>,
     &SetValueTypeMember_LastPlayed<::VBA10::ROMDBEntry, ::Windows::Foundation::DateTime>,
-    36, // Windows.Foundation.DateTime
+    33, // Windows.Foundation.DateTime
     -1,
     false, false, false,
     //  12 - VBA10.ROMDBEntry.Token
@@ -939,161 +871,126 @@ MemberInfo MemberInfos[] =
     L"AppFrame",
     &GetReferenceTypeMember_AppFrame<::VBA10::DirectXPage>,
     nullptr,
-    40, // Windows.UI.Xaml.Controls.Frame
+    37, // Windows.UI.Xaml.Controls.Frame
     -1,
     true,  false, false,
-    //  18 - VBA10.ProductItem.BuyNowButtonVisible
-    L"BuyNowButtonVisible",
-    &GetValueTypeMember_BuyNowButtonVisible<::VBA10::ProductItem, ::Windows::UI::Xaml::Visibility>,
-    &SetEnumMember_BuyNowButtonVisible<::VBA10::ProductItem, ::Windows::UI::Xaml::Visibility>,
-    33, // Windows.UI.Xaml.Visibility
-    -1,
-    false, false, false,
-    //  19 - VBA10.ProductItem.key
-    L"key",
-    &GetReferenceTypeMember_key<::VBA10::ProductItem>,
-    &SetReferenceTypeMember_key<::VBA10::ProductItem, ::Platform::String>,
-    2, // String
-    -1,
-    false, false, false,
-    //  20 - VBA10.ProductItem.Name
-    L"Name",
-    &GetReferenceTypeMember_Name<::VBA10::ProductItem>,
-    &SetReferenceTypeMember_Name<::VBA10::ProductItem, ::Platform::String>,
-    2, // String
-    -1,
-    false, false, false,
-    //  21 - VBA10.ProductItem.Status
-    L"Status",
-    &GetReferenceTypeMember_Status<::VBA10::ProductItem>,
-    &SetReferenceTypeMember_Status<::VBA10::ProductItem, ::Platform::String>,
-    2, // String
-    -1,
-    false, false, false,
-    //  22 - VBA10.ProductItem.imgLink
-    L"imgLink",
-    &GetReferenceTypeMember_imgLink<::VBA10::ProductItem>,
-    &SetReferenceTypeMember_imgLink<::VBA10::ProductItem, ::Platform::String>,
-    2, // String
-    -1,
-    false, false, false,
-    //  23 - VBA10.SelectFilePane.FileSelectedCallback
+    //  18 - VBA10.SelectFilePane.FileSelectedCallback
     L"FileSelectedCallback",
     &GetReferenceTypeMember_FileSelectedCallback<::VBA10::SelectFilePane>,
     &SetReferenceTypeMember_FileSelectedCallback<::VBA10::SelectFilePane, ::VBA10::FileSelectedDelegate>,
-    32, // VBA10.FileSelectedDelegate
+    30, // VBA10.FileSelectedDelegate
     -1,
     false, false, false,
-    //  24 - VBA10.SelectFilesPane.FilesSelectedCallback
+    //  19 - VBA10.SelectFilesPane.FilesSelectedCallback
     L"FilesSelectedCallback",
     &GetReferenceTypeMember_FilesSelectedCallback<::VBA10::SelectFilesPane>,
     &SetReferenceTypeMember_FilesSelectedCallback<::VBA10::SelectFilesPane, ::VBA10::FilesSelectedDelegate>,
-    34, // VBA10.FilesSelectedDelegate
+    31, // VBA10.FilesSelectedDelegate
     -1,
     false, false, false,
-    //  25 - VBA10.StorageFileModel.Path
+    //  20 - VBA10.StorageFileModel.Path
     L"Path",
     &GetReferenceTypeMember_Path<::VBA10::StorageFileModel>,
     nullptr,
     2, // String
     -1,
     true,  false, false,
-    //  26 - VBA10.StorageFileModel.Name
+    //  21 - VBA10.StorageFileModel.Name
     L"Name",
     &GetReferenceTypeMember_Name<::VBA10::StorageFileModel>,
     nullptr,
     2, // String
     -1,
     true,  false, false,
-    //  27 - VBA10.StorageFileModel.Folder
+    //  22 - VBA10.StorageFileModel.Folder
     L"Folder",
     &GetReferenceTypeMember_Folder<::VBA10::StorageFileModel>,
     &SetReferenceTypeMember_Folder<::VBA10::StorageFileModel, ::Windows::Storage::StorageFolder>,
-    38, // Windows.Storage.StorageFolder
+    35, // Windows.Storage.StorageFolder
     -1,
     false, false, false,
-    //  28 - VBA10.StorageFileModel.File
+    //  23 - VBA10.StorageFileModel.File
     L"File",
     &GetReferenceTypeMember_File<::VBA10::StorageFileModel>,
     &SetReferenceTypeMember_File<::VBA10::StorageFileModel, ::Windows::Storage::StorageFile>,
-    35, // Windows.Storage.StorageFile
+    32, // Windows.Storage.StorageFile
     -1,
     false, false, false,
-    //  29 - VBA10.OneDriveFileItem.File
+    //  24 - VBA10.OneDriveFileItem.File
     L"File",
     &GetReferenceTypeMember_File<::VBA10::OneDriveFileItem>,
     &SetReferenceTypeMember_File<::VBA10::OneDriveFileItem, ::Windows::Storage::StorageFile>,
-    35, // Windows.Storage.StorageFile
+    32, // Windows.Storage.StorageFile
     -1,
     false, false, false,
-    //  30 - VBA10.OneDriveFileItem.FolderChildrenCount
+    //  25 - VBA10.OneDriveFileItem.FolderChildrenCount
     L"FolderChildrenCount",
     &GetValueTypeMember_FolderChildrenCount<::VBA10::OneDriveFileItem, ::default::int32>,
     &SetValueTypeMember_FolderChildrenCount<::VBA10::OneDriveFileItem, ::default::int32>,
     0, // Int32
     -1,
     false, false, false,
-    //  31 - VBA10.OneDriveFileItem.OneDriveLink
+    //  26 - VBA10.OneDriveFileItem.OneDriveLink
     L"OneDriveLink",
     &GetReferenceTypeMember_OneDriveLink<::VBA10::OneDriveFileItem>,
     &SetReferenceTypeMember_OneDriveLink<::VBA10::OneDriveFileItem, ::Platform::String>,
     2, // String
     -1,
     false, false, false,
-    //  32 - VBA10.OneDriveFileItem.ParentID
+    //  27 - VBA10.OneDriveFileItem.ParentID
     L"ParentID",
     &GetReferenceTypeMember_ParentID<::VBA10::OneDriveFileItem>,
     &SetReferenceTypeMember_ParentID<::VBA10::OneDriveFileItem, ::Platform::String>,
     2, // String
     -1,
     false, false, false,
-    //  33 - VBA10.OneDriveFileItem.OneDriveID
+    //  28 - VBA10.OneDriveFileItem.OneDriveID
     L"OneDriveID",
     &GetReferenceTypeMember_OneDriveID<::VBA10::OneDriveFileItem>,
     &SetReferenceTypeMember_OneDriveID<::VBA10::OneDriveFileItem, ::Platform::String>,
     2, // String
     -1,
     false, false, false,
-    //  34 - VBA10.OneDriveFileItem.Downloading
+    //  29 - VBA10.OneDriveFileItem.Downloading
     L"Downloading",
     &GetValueTypeMember_Downloading<::VBA10::OneDriveFileItem, ::Platform::Boolean>,
     &SetValueTypeMember_Downloading<::VBA10::OneDriveFileItem, ::Platform::Boolean>,
     3, // Boolean
     -1,
     false, false, false,
-    //  35 - VBA10.OneDriveFileItem.Type
+    //  30 - VBA10.OneDriveFileItem.Type
     L"Type",
     &GetValueTypeMember_Type<::VBA10::OneDriveFileItem, ::VBA10::OneDriveItemType>,
     &SetEnumMember_Type<::VBA10::OneDriveFileItem, ::VBA10::OneDriveItemType>,
-    28, // VBA10.OneDriveItemType
+    26, // VBA10.OneDriveItemType
     -1,
     false, false, false,
-    //  36 - VBA10.OneDriveFileItem.Name
+    //  31 - VBA10.OneDriveFileItem.Name
     L"Name",
     &GetReferenceTypeMember_Name<::VBA10::OneDriveFileItem>,
     &SetReferenceTypeMember_Name<::VBA10::OneDriveFileItem, ::Platform::String>,
     2, // String
     -1,
     false, false, false,
-    //  37 - VBA10.StorageFolderModel.Path
+    //  32 - VBA10.StorageFolderModel.Path
     L"Path",
     &GetReferenceTypeMember_Path<::VBA10::StorageFolderModel>,
     nullptr,
     2, // String
     -1,
     true,  false, false,
-    //  38 - VBA10.StorageFolderModel.Name
+    //  33 - VBA10.StorageFolderModel.Name
     L"Name",
     &GetReferenceTypeMember_Name<::VBA10::StorageFolderModel>,
     nullptr,
     2, // String
     -1,
     true,  false, false,
-    //  39 - VBA10.StorageFolderModel.Folder
+    //  34 - VBA10.StorageFolderModel.Folder
     L"Folder",
     &GetReferenceTypeMember_Folder<::VBA10::StorageFolderModel>,
     &SetReferenceTypeMember_Folder<::VBA10::StorageFolderModel, ::Windows::Storage::StorageFolder>,
-    38, // Windows.Storage.StorageFolder
+    35, // Windows.Storage.StorageFolder
     -1,
     false, false, false,
 };
@@ -1151,8 +1048,6 @@ MemberInfo* GetMemberInfo(::Platform::String^ longMemberName)
     {
         auto otherProviders = ref new ::Platform::Collections::Vector<::Windows::UI::Xaml::Markup::IXamlMetadataProvider^>();
         ::Windows::UI::Xaml::Markup::IXamlMetadataProvider^ provider;
-        provider = ref new ::AdDuplex::Windows_10_SDK_XamlTypeInfo::XamlMetaDataProvider();
-        otherProviders->Append(provider); 
         provider = ref new ::Microsoft::Advertising::MicrosoftAdvertising_XamlTypeInfo::XamlMetaDataProvider();
         otherProviders->Append(provider); 
         _otherProviders = otherProviders;
