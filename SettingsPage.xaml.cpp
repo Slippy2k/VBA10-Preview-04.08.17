@@ -572,7 +572,7 @@ void SettingsPage::turboSkipComboBox_SelectionChanged_1(Platform::Object^ sender
 {
 	if (initdone)
 	{
-		EmulatorSettings::Current->TurboFrameSkip = this->turboSkipComboBox->SelectedIndex * 5 + 1;
+		EmulatorSettings::Current->TurboFrameSkip = this->turboSkipComboBox->SelectedIndex + 1;
 	}
 }
 

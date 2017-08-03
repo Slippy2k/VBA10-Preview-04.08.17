@@ -209,6 +209,9 @@
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);METRO_APP;__WIN32__;C_CORE;NO_ASM;NO_OGL;NO_OAL;NO_LINK;NO_PNG;_CRT_SECURE_NO_WARNINGS;DNO_DEFLATE;FINAL_VERSION;NO_DEFLATE;TILED_RENDERING</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
+    <FxCompile>
+      <ShaderModel>4.0_level_9_1</ShaderModel>
+    </FxCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Link>
@@ -240,6 +243,9 @@
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);METRO_APP;__WIN32__;C_CORE;NO_ASM;NO_OGL;NO_OAL;NO_LINK;NO_PNG;_CRT_SECURE_NO_WARNINGS;DNO_DEFLATE;FINAL_VERSION;NO_DEFLATE;TILED_RENDERING</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
+    <FxCompile>
+      <ShaderModel>4.0_level_9_1</ShaderModel>
+    </FxCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Link>
@@ -270,6 +276,9 @@
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);METRO_APP;__WIN32__;C_CORE;NO_ASM;NO_OGL;NO_OAL;NO_LINK;NO_PNG;_CRT_SECURE_NO_WARNINGS;DNO_DEFLATE;FINAL_VERSION;NO_DEFLATE;TILED_RENDERING</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
+    <FxCompile>
+      <ShaderModel>4.0_level_9_1</ShaderModel>
+    </FxCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
     <Image Include="Assets\AppList.scale-100.png" />

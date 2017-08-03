@@ -136,7 +136,7 @@
 
                         <TextBlock TextWrapping="Wrap" Tapped="TransLate_Tapped"
                         >
-                            <Run Text="**Help Us with Translation: " 
+                            <Run Text="**Help us with Translation: " 
                                  x:Uid="Translate"/>
                             <Underline>
                                 <Run Foreground="#4444D9">https://github.com/Apps-Open-Community/VBA10-Preview/projects/1</Run>
