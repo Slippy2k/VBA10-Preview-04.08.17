@@ -1,0 +1,871 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About.Header" xml:space="preserve">
+    <value>About</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Add.Text" xml:space="preserve">
+    <value>Add</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="AddBtn.Content" xml:space="preserve">
+    <value>Add</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="AddROMBtn.Content" xml:space="preserve">
+    <value>Add ROM</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="AspectRatio.Header" xml:space="preserve">
+    <value>Aspect ratio</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="AutoCbi.Content" xml:space="preserve">
+    <value>Auto</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="AxisText" xml:space="preserve">
+    <value>Axis</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="BilinearCbi.Content" xml:space="preserve">
+    <value>Bilinear</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="BottomCbi.Content" xml:space="preserve">
+    <value>Bottom</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ButtonOpacity.Text" xml:space="preserve">
+    <value>Virtual controller opacity: </value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ButtonScale.Text" xml:space="preserve">
+    <value>Virtual button scale: </value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ButtonText" xml:space="preserve">
+    <value>Button</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="CancelBtn.Content" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="CannotDeleteRunningROMError" xml:space="preserve">
+    <value>You cannot remove a running ROM. Please start another ROM or restart the app.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="CheatInstruction.Text" xml:space="preserve">
+    <value>This emulator supports Gameshark, CodeBreaker and GameGenie codes.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="CHEATS.Text" xml:space="preserve">
+    <value>CHEATS</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="CheatsText" xml:space="preserve">
+    <value>Cheats</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="CheckNewVersion.Text" xml:space="preserve">
+    <value>Check New Version: </value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="CloseBtn.Content" xml:space="preserve">
+    <value>Close</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Code.Text" xml:space="preserve">
+    <value>Code:</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="CommandButtonPosition.Text" xml:space="preserve">
+    <value>Hamburger and command button positions</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ConfigureBtn.Content" xml:space="preserve">
+    <value>Configure</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ConfirmText" xml:space="preserve">
+    <value>Confirm</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ConnectBtn.Content" xml:space="preserve">
+    <value>Connect</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Contact.Text" xml:space="preserve">
+    <value>Contact: </value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Core.Text" xml:space="preserve">
+    <value>Core: Duchuule</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="CPUFilter.Header" xml:space="preserve">
+    <value>CPU filter (slow)</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Credits.Text" xml:space="preserve">
+    <value>Credits:</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="DarkCbi.Content" xml:space="preserve">
+    <value>Dark</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Deadzone.Text" xml:space="preserve">
+    <value>Deadzone (analog stick): </value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="DeleteROMPrompt" xml:space="preserve">
+    <value>This will *delete* the ROM file and save files from the app's private storage. Continue?</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="DeleteText" xml:space="preserve">
+    <value>Delete</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Description.Text" xml:space="preserve">
+    <value>Description:</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Develop.Text" xml:space="preserve">
+    <value>Develop: Commander Harper</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="DeviceConnectionFailText" xml:space="preserve">
+    <value>Error, device connection failed.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="DevTeam.Text" xml:space="preserve">
+    <value>2017 Longhorn Technology</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="DisableLoadConfirm.Header" xml:space="preserve">
+    <value>Disable load confirmation</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="DisableSaveConfirm.Header" xml:space="preserve">
+    <value>Disable save confirmation</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="DisplayType.Header" xml:space="preserve">
+    <value>Display type</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Down.Text" xml:space="preserve">
+    <value>Down</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Dpad8wayCbi.Content" xml:space="preserve">
+    <value>8-way</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="DpadDownText" xml:space="preserve">
+    <value>D-pad Down</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="DpadDynamicStickCbi.Content" xml:space="preserve">
+    <value>Dynamic analog stick</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="DpadFixedStickCbi.Content" xml:space="preserve">
+    <value>Fixed analog stick</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="DpadLeftText" xml:space="preserve">
+    <value>D-pad Left</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="DpadNote" xml:space="preserve">
+    <value>NOTE: the D-pad can only be used for direction and cannot be assigned to other functions.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="DpadRightText" xml:space="preserve">
+    <value>D-pad Right</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="DpadStyle.Header" xml:space="preserve">
+    <value>D-pad style</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="DpadUpText" xml:space="preserve">
+    <value>D-pad Up</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="EditLayoutBtn.Content" xml:space="preserve">
+    <value>Edit button layout</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="EmptyCheatCodeError" xml:space="preserve">
+    <value>You must enter a cheat code first.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="EmulatorFunction.Text" xml:space="preserve">
+    <value>Emulator function</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="EnableTurboMode.Header" xml:space="preserve">
+    <value>Enable turbo mode</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ErrorText" xml:space="preserve">
+    <value>Error</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="EXPORT.Text" xml:space="preserve">
+    <value>EXPORT</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ExportBtn.Content" xml:space="preserve">
+    <value>Export</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ExportFolderError" xml:space="preserve">
+    <value>Could not find export folder.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ExportLocalInstruction.Text" xml:space="preserve">
+    <value>If you import the rom using local storage option, then all save files are stored in the same folder as the rom; you just need to go there and copy them to wherever you need. Better yet, if you are on Desktop/Tablet and store the rom in OneDrive folder, all your saves are automatically synced to the cloud.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ExportOneDriveInstruction.Text" xml:space="preserve">
+    <value>If for any reason you cannot access the rom folder, e.g., the rom is stored in the app's private storage, use this option to export save files to OneDrive.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ExportText" xml:space="preserve">
+    <value>Export</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="FailedConnectToText" xml:space="preserve">
+    <value>Failed to connect to</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="FileNotSupportedError" xml:space="preserve">
+    <value>This file type is not supported.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="FilesImportSuccessText" xml:space="preserve">
+    <value>Files imported successfully.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="FirstTimeHIDConnectText" xml:space="preserve">
+    <value>Looks like this is the first time you connect this gamepad. Click OK to configure it.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="FrameSkipNonturbo.Header" xml:space="preserve">
+    <value>Frame skip (non-turbo mode)</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="FrameSkipTurbo.Header" xml:space="preserve">
+    <value>Frame skip (turbo mode)</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="General.Header" xml:space="preserve">
+    <value>General</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Github.Text" xml:space="preserve">
+    <value>Github: </value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="GithubOld.Text" xml:space="preserve">
+    <value>Github (old): </value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Gpl.Text" xml:space="preserve">
+    <value>Gpl: </value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="GPUFilter.Header" xml:space="preserve">
+    <value>GPU filter (fast)</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="HELP.Text" xml:space="preserve">
+    <value>HELP</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="HelpText" xml:space="preserve">
+    <value>Help</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="HIDConfigInstruction" xml:space="preserve">
+    <value>You can now assign buttons as you wish. Up to two buttons can be assigned for each function.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="HideHamburger.Header" xml:space="preserve">
+    <value>Hide hamburger button</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="HIDGamepadConfig.Text" xml:space="preserve">
+    <value>HID Gamepad Config</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="HIDGamepadDetectedText" xml:space="preserve">
+    <value>HID gamepad(s) detected.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="HoldActivateCbi.Content" xml:space="preserve">
+    <value>Hold to activate</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="HomeText" xml:space="preserve">
+    <value>Home</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="HowTo.Header" xml:space="preserve">
+    <value>How to</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="HowToRestoreSave.Text" xml:space="preserve">
+    <value>How to restore saves</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="IMPORT.Text" xml:space="preserve">
+    <value>IMPORT</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ImportedSuccessText" xml:space="preserve">
+    <value>was imported successfully.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ImportLocalInstruction.Text" xml:space="preserve">
+    <value>Use this option to import a file already present on your phone or PC. NOTE: due to a bug in Windows 10, you won't be able to see the content of the folder you are browsing. Just select the folder containing the rom and will be presented with a list of rom to import.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ImportOneDriveInstruction.Text" xml:space="preserve">
+    <value>Use this option to import roms and save files from OneDrive, which will be copied to the app's private storage. NOTE: It is recommended that you store the roms on an user-accessible folder and use the Local Storage option to import them, which will prevent loss of progress if you the app every becomes corrupted.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ImportROMBtn.Content" xml:space="preserve">
+    <value>Import ROM</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ImportRSBtn.Content" xml:space="preserve">
+    <value>Import R/S</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ImportSaveBtn.Content" xml:space="preserve">
+    <value>Import Save</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ImportText" xml:space="preserve">
+    <value>Import</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Input.Header" xml:space="preserve">
+    <value>Input</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Inspire.Text" xml:space="preserve">
+    <value>Inspire: Commander Harper</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="InvalidCheatCodeError" xml:space="preserve">
+    <value>Invalid code format.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="IsConnectedText" xml:space="preserve">
+    <value>is connected.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="JoystickScale.Text" xml:space="preserve">
+    <value>Virtual joystick scale: </value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="KeyBindings.Text" xml:space="preserve">
+    <value>Key Bindings</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="L3LeftStick.Text" xml:space="preserve">
+    <value>L3 (Left stick press)</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Left.Text" xml:space="preserve">
+    <value>Left</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="LightCbi.Content" xml:space="preserve">
+    <value>Light</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="List.Text" xml:space="preserve">
+    <value>List</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Load.Label" xml:space="preserve">
+    <value>Load</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="LoadConfirmPrompt" xml:space="preserve">
+    <value>Are you sure you want to load? All unsaved progress will be lost.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Loading.Text" xml:space="preserve">
+    <value>Loading...</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="LoadProductBtn.Content" xml:space="preserve">
+    <value>Load products</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="LocalStorage.Text" xml:space="preserve">
+    <value>Local storage</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="NetworkErrorText" xml:space="preserve">
+    <value>Network error.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="NewGamePadText" xml:space="preserve">
+    <value>A new HID gampad is detected. Please go to Settings to configure it.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="NoCheat.Text" xml:space="preserve">
+    <value>No cheat code has been entered.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="NoFileSelectedText" xml:space="preserve">
+    <value>You have to select at least one file.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="NoHIDGamepadText" xml:space="preserve">
+    <value>No HID gamepad detected.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="NoMatchingROMError" xml:space="preserve">
+    <value>Could not find a matching ROM name.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="NoneCbi.Content" xml:space="preserve">
+    <value>None</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="NoSupportedFile.Text" xml:space="preserve">
+    <value>No supported file found!</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="NoSupportedFileText" xml:space="preserve">
+    <value>No supported file found!</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="NoText" xml:space="preserve">
+    <value>No</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="NoXboxControllerText" xml:space="preserve">
+    <value>No XBox controller detected.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="OKBtn.Content" xml:space="preserve">
+    <value>OK</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="OriginalCbi.Content" xml:space="preserve">
+    <value>Original</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="OverwriteAsk" xml:space="preserve">
+    <value>Overwrite?</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="OverwriteSaveConfirmText" xml:space="preserve">
+    <value>Are you sure you want to save? This will overwrite the selected save state.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="PleaseWaitDownloadText" xml:space="preserve">
+    <value>Please wait until all files have finished downloading.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="PremiumCPUFilterPrompt" xml:space="preserve">
+    <value>This is a premium feature. You can use the feature now but the setting will revert to None the next time the app starts.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="PremiumGPUFilterPrompt" xml:space="preserve">
+    <value>This is a premium feature. Free users can use None, Bilinear or HQ2x.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="PressStartPrompt" xml:space="preserve">
+    <value>First press Start button.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ProcessingText" xml:space="preserve">
+    <value>Processing...</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="R3RightStick.Text" xml:space="preserve">
+    <value>R3 (Right stick press)</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="RemoveROMPrompt" xml:space="preserve">
+    <value>This will remove the ROM entry from the app's list. Your actual ROM files and save files will not be affected. Continue?</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Reset.Label" xml:space="preserve">
+    <value>Reset</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ResetConfirmPrompt" xml:space="preserve">
+    <value>Are you sure you want to reset the console?</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="RestoreSaveInstruction.Text" xml:space="preserve">
+    <value>1. Quit the app completelely.
+2. Make sure the name of the save file match the name  of the rom exactly (except the extension).
+3. Open the app and import the save file.
+4. Start the game.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Right.Text" xml:space="preserve">
+    <value>Right</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Save.Label" xml:space="preserve">
+    <value>Save</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="SaveFileImportSuccessText" xml:space="preserve">
+    <value>Save file imported successfully.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Savestate0Text" xml:space="preserve">
+    <value>Savestate 0</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Savestate1Text" xml:space="preserve">
+    <value>Savestate 1</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Savestate2Text" xml:space="preserve">
+    <value>Savestate 2</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Savestate3Text" xml:space="preserve">
+    <value>Savestate 3</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Savestate4Text" xml:space="preserve">
+    <value>Savestate 4</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Savestate5Text" xml:space="preserve">
+    <value>Savestate 5</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Savestate6Text" xml:space="preserve">
+    <value>Savestate 6</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Savestate7Text" xml:space="preserve">
+    <value>Savestate 7</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Savestate8Text" xml:space="preserve">
+    <value>Savestate 8</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Savestate9Text" xml:space="preserve">
+    <value>Savestate 9 (auto)</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ScanlinesCbi.Content" xml:space="preserve">
+    <value>Scanlines</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Select.Text" xml:space="preserve">
+    <value>Select</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="SelectFileExportText" xml:space="preserve">
+    <value>Select file(s) to export</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="SelectFileImportText" xml:space="preserve">
+    <value>Select file(s) to import</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="SelectHIDGamepadPrompt" xml:space="preserve">
+    <value>Please select a HID gamepad.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="SelectROMDirText" xml:space="preserve">
+    <value>Select ROM Directory</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="SelectROMText" xml:space="preserve">
+    <value>SelectROM</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="SelectState.Label" xml:space="preserve">
+    <value>Select State</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="SETTINGS.Text" xml:space="preserve">
+    <value>SETTINGS</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="SettingsText" xml:space="preserve">
+    <value>Settings</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ShowFPS.Header" xml:space="preserve">
+    <value>Show FPS</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="SignedInText" xml:space="preserve">
+    <value>Signed in</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="SignInBtn.Content" xml:space="preserve">
+    <value>Sign in</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="SignInText" xml:space="preserve">
+    <value>Sign in</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Sound.Header" xml:space="preserve">
+    <value>Sound</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Source.Text" xml:space="preserve">
+    <value>Source: </value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Start.Text" xml:space="preserve">
+    <value>Start</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="StartARom.Text" xml:space="preserve">
+    <value>Please start a rom first.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="StretchCbi.Content" xml:space="preserve">
+    <value>Stretch</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="SwitchFullscreenSuccessText" xml:space="preserve">
+    <value>Successfully switched to full screen mode.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="SyncAudio.Text" xml:space="preserve">
+    <value>Synchronize audio (better quality, CPU intensive)</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ThanksWatchVideoText" xml:space="preserve">
+    <value>Thanks! Enjoy your Xbox/HID controller for the next hour. Click this button again after the time expires to continue using Xbox/HID controller.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Theme.Header" xml:space="preserve">
+    <value>Theme</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="ThemeNextStartText" xml:space="preserve">
+    <value>The theme will be applied the next time the app starts.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="TopCbi.Content" xml:space="preserve">
+    <value>Top</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="TouchToggle.Header" xml:space="preserve">
+    <value>Show virtual buttons</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Translate.Text" xml:space="preserve">
+    <value>Help us with Translation: </value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Turbo.Text" xml:space="preserve">
+    <value>Turbo</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="TurboBehavior.Header" xml:space="preserve">
+    <value>Turbo button behavior</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="TurboText" xml:space="preserve">
+    <value>Turbo</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="TurboToggleCbi.Content" xml:space="preserve">
+    <value>Toggle turbo on/off</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="TVModeCbi.Content" xml:space="preserve">
+    <value>TV mode</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="UnknownText" xml:space="preserve">
+    <value>Unknown</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Up.Text" xml:space="preserve">
+    <value>Up</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="UploadSuccessText" xml:space="preserve">
+    <value>Upload completed successfully.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="UseFullscreen.Header" xml:space="preserve">
+    <value>Use fullscreen mode</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="VersionText" xml:space="preserve">
+    <value>Version: </value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="Video.Header" xml:space="preserve">
+    <value>Video</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="WarningText" xml:space="preserve">
+    <value>Warning</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="WatchVideoPrompt" xml:space="preserve">
+    <value>To use it, please go to Settings to watch a video.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="WatchWholeVideoError" xml:space="preserve">
+    <value>You need to watch the whole video to activate the feature.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="XboxButton.Text" xml:space="preserve">
+    <value>Xbox button</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="XboxControllerConnectedText" xml:space="preserve">
+    <value>XBox controller is connected.</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="XboxGamepadConfig.Text" xml:space="preserve">
+    <value>Xbox Gamepad Config</value>
+    <comment>2.0.0.0</comment>
+  </data>
+  <data name="YesText" xml:space="preserve">
+    <value>Yes</value>
+    <comment>2.0.0.0</comment>
+  </data>
+</root>

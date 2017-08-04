@@ -958,5 +958,6 @@
     <PRIResource Include="Strings\en-US\Resources.resw">
       <Filter>Strings\en-US</Filter>
     </PRIResource>
+    <PRIResource Include="Strings\zh-cn\Resources.resw" />
   </ItemGroup>
 </Project>
