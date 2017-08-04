@@ -195,7 +195,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <FxCompile>
-      <ShaderModel>5.1</ShaderModel>
+      <ShaderModel>4.0_level_9_3</ShaderModel>
     </FxCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
@@ -213,7 +213,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <FxCompile>
-      <ShaderModel>5.1</ShaderModel>
+      <ShaderModel>4.0_level_9_3</ShaderModel>
     </FxCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -232,7 +232,7 @@
       <RemoveUnreferencedCodeData>false</RemoveUnreferencedCodeData>
     </ClCompile>
     <FxCompile>
-      <ShaderModel>5.1</ShaderModel>
+      <ShaderModel>4.0_level_9_3</ShaderModel>
     </FxCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -250,7 +250,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <FxCompile>
-      <ShaderModel>5.1</ShaderModel>
+      <ShaderModel>4.0_level_9_3</ShaderModel>
     </FxCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -268,7 +268,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <FxCompile>
-      <ShaderModel>5.1</ShaderModel>
+      <ShaderModel>4.0_level_9_3</ShaderModel>
     </FxCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -286,7 +286,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <FxCompile>
-      <ShaderModel>5.1</ShaderModel>
+      <ShaderModel>4.0_level_9_3</ShaderModel>
     </FxCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
