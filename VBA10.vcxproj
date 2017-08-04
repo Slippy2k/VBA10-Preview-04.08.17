@@ -157,7 +157,7 @@
     <PackageCertificateKeyFile>VBA10_TemporaryKey.pfx</PackageCertificateKeyFile>
     <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
     <AppxBundlePlatforms>x64|arm</AppxBundlePlatforms>
-    <AppxPackageDir>D:\Duc\Documents\Visual Studio 2015\Projects\VBA10\AppPackages\</AppxPackageDir>
+    <AppxPackageDir>D:\Longhorn\output\</AppxPackageDir>
     <PackageCertificateThumbprint>CDFAEF1FC25D6854C7689AFF0AD84C056EAF30C6</PackageCertificateThumbprint>
     <AppxBundle>Always</AppxBundle>
     <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
