@@ -156,9 +156,9 @@
   <PropertyGroup>
     <PackageCertificateKeyFile>VBA10_TemporaryKey.pfx</PackageCertificateKeyFile>
     <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
-    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
+    <AppxBundlePlatforms>x64|arm</AppxBundlePlatforms>
     <AppxPackageDir>D:\Duc\Documents\Visual Studio 2015\Projects\VBA10\AppPackages\</AppxPackageDir>
-    <PackageCertificateThumbprint>848A58A80420B0058E01C68EF3AFF76DC6C329CF</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>CDFAEF1FC25D6854C7689AFF0AD84C056EAF30C6</PackageCertificateThumbprint>
     <AppxBundle>Always</AppxBundle>
     <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
   </PropertyGroup>
@@ -1248,7 +1248,6 @@
     <None Include="Filter\hqx.inc" />
     <None Include="packages.config" />
     <None Include="SpriteBatch.hlsli" />
-    <None Include="VBA10_StoreKey.pfx" />
     <None Include="VBA10_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

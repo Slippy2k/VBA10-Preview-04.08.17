@@ -647,11 +647,10 @@
     </None>
     <None Include="Package.StoreAssociation.xml" />
     <None Include="packages.config" />
-    <None Include="VBA10_StoreKey.pfx" />
-    <None Include="VBA10_TemporaryKey.pfx" />
     <None Include="Filter\hqx.inc">
       <Filter>Filters</Filter>
     </None>
+    <None Include="VBA10_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="DirectXPage.xaml" />
